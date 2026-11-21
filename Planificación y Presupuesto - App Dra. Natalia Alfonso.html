@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Planificación y Presupuesto - App Dra. Natalia Alfonso</title>
+</head>
+<body>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --ink-primary: #151917;
+  --ink-secondary: #4A534D;
+  --ink-muted: #747E77;
+  --surface-ground: #FAF8F5;
+  --surface-card: #FFFFFF;
+  --surface-card-subtle: #F6F3EE;
+  --border-subtle: #E6E0D6;
+  --border-strong: #D4CBBE;
+  --accent-gold: #8E6D38;
+  --accent-gold-light: #F4EEDF;
+  --accent-gold-dark: #6D5224;
+  --accent-clinical: #24483B;
+  --accent-clinical-light: #EBF2EE;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--ink-primary);
+  background-color: var(--surface-ground);
+  line-height: 1.55;
+  margin: 0;
+  padding: 20px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.doc-sheet {
+  max-width: 980px;
+  margin: 0 auto;
+  background-color: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  padding: 38px 44px;
+  box-shadow: 0 12px 40px rgba(21, 25, 23, 0.05);
+}
+
+/* Header & Cover */
+.header-monogram {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.clinic-badge {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--accent-gold-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.clinic-badge::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color: var(--accent-gold);
+  border-radius: 50%;
+}
+
+.doc-date-badge {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--ink-muted);
+  letter-spacing: 0.5px;
+}
+
+.title-section {
+  margin-bottom: 16px;
+}
+
+.main-title {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--ink-primary);
+  margin: 0 0 6px 0;
+  letter-spacing: -0.4px;
+}
+
+.subtitle-desc {
+  font-size: 13px;
+  color: var(--ink-secondary);
+  margin: 0 0 12px 0;
+  max-width: 860px;
+  line-height: 1.5;
+}
+
+.meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  background: var(--surface-card-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: 7px;
+  padding: 8px 14px;
+  font-size: 11.5px;
+}
+
+.meta-item strong {
+  color: var(--ink-primary);
+  font-weight: 700;
+}
+
+/* Executive KPI Matrix */
+.kpi-matrix {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 16px 0 20px 0;
+}
+
+.kpi-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-top: 3px solid var(--accent-gold);
+  border-radius: 8px;
+  padding: 10px 8px;
+  text-align: center;
+}
+
+.kpi-card.highlight {
+  background: var(--accent-gold-light);
+  border-color: var(--accent-gold);
+  border-top: 3px solid var(--accent-gold-dark);
+}
+
+.kpi-value {
+  font-family: var(--font-serif);
+  font-size: 23px;
+  font-weight: 700;
+  color: var(--ink-primary);
+  line-height: 1.1;
+  margin-bottom: 3px;
+}
+
+.kpi-card.highlight .kpi-value {
+  color: var(--accent-gold-dark);
+}
+
+.kpi-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: var(--ink-muted);
+  font-weight: 600;
+}
+
+/* Chapter Headers */
+.chapter-header {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  border-bottom: 1.5px solid var(--ink-primary);
+  padding-bottom: 6px;
+  margin: 22px 0 14px 0;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.chapter-num {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--accent-gold);
+  letter-spacing: -0.4px;
+}
+
+.chapter-title {
+  font-family: var(--font-serif);
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--ink-primary);
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+
+/* Content Blocks */
+.editorial-lead {
+  background: var(--surface-card-subtle);
+  border-left: 3px solid var(--accent-gold);
+  padding: 12px 16px;
+  border-radius: 0 7px 7px 0;
+  font-size: 12px;
+  color: var(--ink-secondary);
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+
+.lead-note {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--border-strong);
+  font-size: 11px;
+  color: var(--ink-muted);
+  font-style: italic;
+}
+
+.two-col-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin: 14px 0 0 0;
+}
+
+.component-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.component-card.clinic {
+  border-top: 3px solid var(--accent-gold);
+}
+
+.component-card.patient {
+  border-top: 3px solid var(--accent-clinical);
+}
+
+.card-tag {
+  display: inline-block;
+  font-size: 9.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.card-tag.clinic {
+  background: var(--accent-gold-light);
+  color: var(--accent-gold-dark);
+}
+
+.card-tag.patient {
+  background: var(--accent-clinical-light);
+  color: var(--accent-clinical);
+}
+
+.component-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ink-primary);
+  margin: 0 0 6px 0;
+}
+
+.component-text {
+  font-size: 11.5px;
+  color: var(--ink-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Stage Blocks (Section 02) */
+.stage-block {
+  border: 1px solid var(--border-subtle);
+  border-radius: 9px;
+  background: #FFFFFF;
+  margin-bottom: 20px;
+  overflow: hidden;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.stage-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #181C19;
+  color: #FFFFFF;
+  padding: 13px 18px;
+}
+
+.stage-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+
+.stage-metrics {
+  display: flex;
+  gap: 12px;
+  font-size: 11px;
+}
+
+.stage-metric-pill {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 3px 9px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.stage-metric-pill.gold {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: rgba(212, 175, 55, 0.4);
+  color: #F8E6B8;
+}
+
+.stage-body {
+  padding: 16px 18px;
+}
+
+.stage-objective {
+  font-size: 12.5px;
+  color: var(--ink-secondary);
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--surface-card-subtle);
+}
+
+.screen-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.screen-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 9px 12px;
+  background: var(--surface-ground);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+}
+
+.screen-info {
+  flex: 1;
+}
+
+.screen-name {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--ink-primary);
+  margin-bottom: 3px;
+}
+
+.screen-desc {
+  font-size: 11.5px;
+  color: var(--ink-secondary);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.screen-hours {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent-gold-dark);
+  background: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+/* 12 Screens Map (Section 03) */
+.screens-map-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin: 16px 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.map-column {
+  background: var(--surface-ground);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.map-column-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink-primary);
+  padding-bottom: 8px;
+  border-bottom: 1.5px solid var(--border-strong);
+  margin-bottom: 10px;
+}
+
+.map-badge {
+  font-size: 9.5px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.map-badge.gold {
+  background: var(--accent-gold-light);
+  color: var(--accent-gold-dark);
+}
+
+.map-badge.clinical {
+  background: var(--accent-clinical-light);
+  color: var(--accent-clinical);
+}
+
+.map-item {
+  background: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  padding: 9px 11px;
+  margin-bottom: 7px;
+  font-size: 11.5px;
+  line-height: 1.4;
+}
+
+.map-item strong {
+  color: var(--ink-primary);
+}
+
+.map-item .stage-ref {
+  float: right;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--accent-gold-dark);
+}
+
+/* Financial Table (Section 04) */
+.table-wrapper {
+  margin: 16px 0;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  overflow: hidden;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.finance-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  text-align: left;
+}
+
+.finance-table thead th {
+  background: #181C19;
+  color: #FFFFFF;
+  padding: 11px 13px;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 700;
+}
+
+.finance-table tbody td {
+  padding: 12px 13px;
+  border-bottom: 1px solid var(--border-subtle);
+  vertical-align: top;
+}
+
+.finance-table tbody tr:nth-child(even) {
+  background: #FCFBF9;
+}
+
+.finance-table tbody tr.total-row {
+  background: var(--accent-gold-light);
+  font-weight: 700;
+  border-bottom: none;
+}
+
+.finance-table tbody tr.total-row td {
+  font-size: 12.5px;
+  color: var(--ink-primary);
+  border-top: 2px solid var(--accent-gold);
+}
+
+.amount-cell {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink-primary);
+  white-space: nowrap;
+}
+
+.amount-cell.total {
+  font-size: 18px;
+  color: var(--accent-gold-dark);
+}
+
+.scope-notice {
+  background: var(--surface-card-subtle);
+  border-left: 3px solid var(--border-strong);
+  padding: 11px 15px;
+  border-radius: 0 6px 6px 0;
+  font-size: 11.5px;
+  color: var(--ink-secondary);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+/* Payment Milestones (Section 05) */
+.payments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 16px 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.payment-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 14px 12px;
+}
+
+.payment-stage-header {
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 7px;
+  margin-bottom: 9px;
+}
+
+.payment-stage-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink-primary);
+  margin: 0;
+}
+
+.payment-total {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--accent-gold-dark);
+  margin-top: 2px;
+}
+
+.payment-step {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  padding: 5px 0;
+  border-bottom: 1px dashed var(--border-subtle);
+}
+
+.payment-step:last-child {
+  border-bottom: none;
+}
+
+.payment-step-label {
+  color: var(--ink-secondary);
+}
+
+.payment-step-val {
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+
+/* Team & Methodology */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 14px 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.team-box {
+  background: var(--surface-card-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  padding: 11px 13px;
+}
+
+.team-role {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--ink-primary);
+  margin-bottom: 3px;
+}
+
+.team-desc {
+  font-size: 11px;
+  color: var(--ink-secondary);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Maintenance & Options */
+.options-box {
+  border: 1px solid var(--border-subtle);
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-top: 12px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.option-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 7px 0;
+  font-size: 11.5px;
+  border-bottom: 1px solid var(--surface-card-subtle);
+}
+
+.option-row:last-child {
+  border-bottom: none;
+}
+
+/* Technical Specs & Scrum */
+.req-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 12px 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.req-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  padding: 11px 13px;
+}
+
+.req-card-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--accent-clinical);
+  margin-bottom: 7px;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 4px;
+}
+
+.req-item {
+  font-size: 11px;
+  color: var(--ink-secondary);
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+.req-item strong {
+  color: var(--ink-primary);
+}
+
+.tech-stack-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 9px;
+  margin: 14px 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.stack-card {
+  background: var(--surface-card-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  padding: 10px 8px;
+  text-align: center;
+}
+
+.stack-label {
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: var(--ink-muted);
+  font-weight: 700;
+}
+
+.stack-val {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--ink-primary);
+  margin-top: 3px;
+}
+
+.stack-sub {
+  font-size: 10px;
+  color: var(--ink-secondary);
+  margin-top: 2px;
+}
+
+/* Sign-off Block */
+.signoff-section {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1.5px solid var(--border-strong);
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.signoff-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 20px;
+}
+
+.signoff-box {
+  border-top: 1px solid var(--ink-primary);
+  padding-top: 7px;
+  font-size: 11px;
+}
+
+.signoff-name {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+
+.signoff-role {
+  color: var(--ink-secondary);
+  margin-top: 2px;
+}
+
+/* Page Break Helper Classes */
+.page-break {
+  page-break-before: always !important;
+  break-before: page !important;
+}
+
+.avoid-break {
+  page-break-inside: avoid !important;
+  break-inside: avoid !important;
+}
+
+/* Print Specific Rules */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 13mm 12mm 14mm 12mm;
+  }
+  
+  body {
+    background: #FFFFFF !important;
+    padding: 0 !important;
+    font-size: 10pt !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  .doc-sheet {
+    max-width: 100% !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+  }
+  
+  .kpi-matrix {
+    margin: 14px 0 18px 0 !important;
+  }
+  
+  .chapter-header {
+    margin: 20px 0 12px 0 !important;
+  }
+  
+  .stage-block {
+    margin-bottom: 14px !important;
+  }
+}
+</style>
+
+<div class="doc-sheet">
+
+  <!-- Header Monogram & Reference -->
+  <div class="header-monogram">
+    <div class="clinic-badge">
+      Consultorio Dra. Natalia Alfonso · Medicina Estética, Longevidad &amp; Nutrición
+    </div>
+    <div class="doc-date-badge">
+      Ref. Técnico-Comercial · Octubre 2026
+    </div>
+  </div>
+
+  <!-- Document Title Section -->
+  <div class="title-section">
+    <h1 class="main-title">Planificación de Desarrollo, Pantallas y Presupuesto de Ingeniería</h1>
+    <p class="subtitle-desc">
+      Especificación técnica, mapa integral de 12 vistas, esfuerzo por etapas y esquema económico para la construcción del ecosistema digital interactivo para el consultorio y sus pacientes.
+    </p>
+    <div class="meta-grid">
+      <div class="meta-item">
+        <strong>Proyecto:</strong> Aplicación Instalable (PWA Multi-dispositivo)
+      </div>
+      <div class="meta-item">
+        <strong>Liderazgo Técnico:</strong> Facundo y el equipo de desarrollo
+      </div>
+    </div>
+  </div>
+
+  <!-- Executive KPI Matrix -->
+  <div class="kpi-matrix">
+    <div class="kpi-card">
+      <div class="kpi-value">265 a 320 hs</div>
+      <div class="kpi-label">Horas Totales Estimadas</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-value">3 Etapas</div>
+      <div class="kpi-label">Hitos Progresivos</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-value">8 a 10 Sem.</div>
+      <div class="kpi-label">Plazo Total Estimado</div>
+    </div>
+    <div class="kpi-card highlight">
+      <div class="kpi-value">USD 3.000</div>
+      <div class="kpi-label">Inversión Total Ingeniería</div>
+    </div>
+  </div>
+
+  <!-- SECTION 01: Objetivo General y Alcance -->
+  <div class="avoid-break">
+    <div class="chapter-header">
+      <span class="chapter-num">01.</span>
+      <h2 class="chapter-title">Objetivo General y Alcance del Proyecto</h2>
+    </div>
+
+    <div class="editorial-lead">
+      El equipo de desarrollo se encargará de diseñar la arquitectura, base de datos y programación integral de una <strong>Aplicación Web Progresiva Multi-dispositivo (PWA)</strong> que conecta en tiempo real a la Dra. Natalia Alfonso, el área de Nutrición y el equipo de Recepción con su comunidad de pacientes (~200 pacientes activos en seguimiento continuo).
+      <br><br>
+      La premisa de ingeniería es el <strong>"Puente Reactivo"</strong>: cualquier anotación, cambio de tratamiento o carga que Natalia efectúe desde su Mac de consultorio se sincroniza de forma inmediata en su iPhone o iPad, y cualquier reporte semanal ingresado por la paciente desde su celular (como peso, saturación o medidas) se visualiza en tiempo real en la ficha clínica antes de la consulta presencial.
+      <div class="lead-note">
+        <strong>Nota de alcance administrativo:</strong> El área contable continuará utilizando su software actual para tesorería, facturación y cobros. La migración inicial del padrón histórico de pacientes desde el software previo (formato CSV/Excel) está completamente <strong>bonificada dentro de la Etapa 1</strong>.
+      </div>
+    </div>
+
+    <div class="two-col-grid">
+      <div class="component-card clinic">
+        <span class="card-tag clinic">Suite de Profesionales</span>
+        <h3 class="component-title">1. Vista Consultorio (Mac, iPad &amp; iPhone)</h3>
+        <p class="component-text">
+          Diseño responsivo optimizado con tres puntos de quiebre (Mac escritorio, iPad intermedio e iPhone móvil). Permite alta de pacientes, gestión de agenda de turnos, carga de cápsulas de video breves (5 a 15s), supervisión de curvas evolutivas en vivo, prescripción de suplementos/tratamientos, carga de PDFs y mensajería directa.
+        </p>
+      </div>
+
+      <div class="component-card patient">
+        <span class="card-tag patient">Portal del Paciente</span>
+        <h3 class="component-title">2. Vista Paciente (PWA Instalable en Celular)</h3>
+        <p class="component-text">
+          Experiencia móvil instalable en pantalla de inicio (iOS y Android) sin fricciones. La paciente visualiza su próxima cita acompañada por el micro-video explicativo de Natalia, registra controles semanales (peso, saturometría), consulta su gráfica de progreso, descarga indicaciones médicas en PDF y recibe alertas prioritarias.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 02: Planificación por Etapas -->
+  <div class="page-break"></div>
+
+  <div class="chapter-header">
+    <span class="chapter-num">02.</span>
+    <h2 class="chapter-title">Planificación y Desarrollo por Etapas</h2>
+  </div>
+
+  <!-- ETAPA 1 -->
+  <div class="stage-block">
+    <div class="stage-head">
+      <h3 class="stage-title">ETAPA 1: MVP Funcional — Base, Agenda, Citas y Micro-Videos</h3>
+      <div class="stage-metrics">
+        <span class="stage-metric-pill">Duración: 3 a 4 semanas</span>
+        <span class="stage-metric-pill gold">Esfuerzo: 110 a 130 hs</span>
+      </div>
+    </div>
+    <div class="stage-body">
+      <div class="stage-objective">
+        <strong>Objetivo del Hito:</strong> Entregar la base operativa del sistema para que el consultorio gestione su agenda, registre pacientes y las pacientes accedan a su próxima cita junto con la cápsula audiovisual explicativa.
+      </div>
+      <div class="screen-list">
+        <div class="screen-item">
+          <div class="screen-info">
+            <div class="screen-name">1. Pantalla de Bienvenida y Acceso Seguro (Login Diferenciado)</div>
+            <p class="screen-desc">
+              Acceso seguro con enrutamiento automático según rol (Natalia, Nutrición, Recepción, Paciente). Incluye guía e interactivo de instalación de la aplicación en celulares iOS/Android y accesos directos en Mac.
+            </p>
+          </div>
+          <div class="screen-hours">20 a 25 hs</div>
+        </div>
+
+        <div class="screen-item">
+          <div class="screen-info">
+            <div class="screen-name">2. Panel Central del Consultorio / Dashboard de Resumen Diario</div>
+            <p class="screen-desc">
+              Tablero principal con métricas en tiempo real: volumen de pacientes en seguimiento, turnos agendados para el día y estado de atención en sala, adaptable a resoluciones de Mac, iPad y móvil.
+            </p>
+          </div>
+          <div class="screen-hours">25 a 30 hs</div>
+        </div>
+
+        <div class="screen-item">
+          <div class="screen-info">
+            <div class="screen-name">3. Padrón General, Buscador Rápido y Alta de Pacientes</div>
+            <p class="screen-desc">
+              Búsqueda instantánea por nombre, apellido o DNI. Formulario dinámico de admisión médica (datos personales, área de atención en cirugía, estética o nutrición) y ficha base del paciente.
+            </p>
+          </div>
+          <div class="screen-hours">25 a 30 hs</div>
+        </div>
+
+        <div class="screen-item">
+          <div class="screen-info">
+            <div class="screen-name">4. Agenda de Citas y Biblioteca de Micro-Videos (5 a 15 seg)</div>
+            <p class="screen-desc">
+              Módulo para asignar turnos con fecha, horario y procedimiento médico. Repositorio multimedia para cargar por única vez las cápsulas breves de Natalia, vinculadas automáticamente al procedimiento seleccionado.
+            </p>
+          </div>
+          <div class="screen-hours">20 a 25 hs</div>
+        </div>
+
+        <div class="screen-item">
+          <div class="screen-info">
+            <div class="screen-name">5. Pantalla del Paciente: "Mi Próxima Cita" con Reproductor Integrado</div>
+            <p class="screen-desc">
+              Vista inicial para la paciente en su teléfono con el detalle de su sesión, profesional a cargo e indicaciones previas, sumado al reproductor nativo del video de 5 a 15s con las palabras de Natalia.
+            </p>
+          </div>
+          <div class="screen-hours">20 hs</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ETAPA 2 -->
+  <div class="stage-block">
+    <div class="stage-head">
+      <h3 class="stage-title">ETAPA 2: Seguimiento Continuo — Puente Reactivo, Gráficos y Suplementación</h3>
+      <div class="stage-metrics">
+        <span class="stage-metric-pill">Duración: 3 semanas</span>
+        <span class="stage-metric-pill gold">Esfuerzo: 90 a 110 hs</span>
+      </div>
+    </div>
+    <div class="stage-body">
+      <div class="stage-objective">
+        <strong>Objetivo del Hito:</strong> Poner en funcionamiento el puente reactivo paciente-médica mediante autocarga periódica de biométricas desde el hogar y visualización clínica previa a consulta.
+      </div>
+      <div class="screen-list">
+        <div class="screen-item">
+          <div class="screen-info">
+            <div class="screen-name">1. Portal de la Paciente: "Cargar mi Avance"</div>
+            <p class="screen-desc">
+              Formulario ágil en el celular para registrar peso, saturación de oxígeno, medidas corporales y variables indicadas, con fechado automático y validación de rangos biológicos.
+            </p>
+          </div>
+          <div class="screen-hours">20 a 25 hs</div>
+        </div>
+
+        <div class="screen-item">
+          <div class="screen-info">
+            <div class="screen-name">2. Gráficos de Evolución Biométrica en Tiempo Real</div>
+            <p class="screen-desc">
+              Visualización gráfica interactiva (curvas de tendencia) accesible tanto por la paciente como por Natalia y el equipo nutricional desde la ficha clínica para toma de decisiones informadas.
+            </p>
+          </div>
+          <div class="screen-hours">25 a 30 hs</div>
+        </div>
+
+        <div class="screen-item">
+          <div class="screen-info">
+            <div class="screen-name">3. Feed de Novedades y Alertas de Actividad Reciente</div>
+            <p class="screen-desc">
+              Bandeja en el panel profesional que lista los reportes ingresados en las últimas 24/48hs por pacientes activas, con acceso directo en un clic al perfil y su nueva métrica.
+            </p>
+          </div>
+          <div class="screen-hours">15 a 20 hs</div>
+        </div>
+
+        <div class="screen-item">
+          <div class="screen-info">
+            <div class="screen-name">4. Módulo de Tratamientos, Suplementación &amp; Nutrición</div>
+            <p class="screen-desc">
+              Prescripción digital de esquemas de suplementación, vitaminas, pautas dietarias e indicaciones pre/post-quirúrgicas, clasificadas en estado Activo o Finalizado para lectura de la paciente.
+            </p>
+          </div>
+          <div class="screen-hours">15 a 20 hs</div>
+        </div>
+
+        <div class="screen-item">
+          <div class="screen-info">
+            <div class="screen-name">5. Repositorio de Estudios Médicos y Planes en PDF</div>
+            <p class="screen-desc">
+              Subida segura desde consultorio y descarga directa en el móvil de la paciente de analíticas de laboratorio, pautas de nutrición y consentimientos informados en formato PDF.
+            </p>
+          </div>
+          <div class="screen-hours">15 hs</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ETAPA 3 -->
+  <div class="stage-block">
+    <div class="stage-head">
+      <h3 class="stage-title">ETAPA 3: Comunicación Privada — Chat Interno, Botonera y QA Final</h3>
+      <div class="stage-metrics">
+        <span class="stage-metric-pill">Duración: 2 a 3 semanas</span>
+        <span class="stage-metric-pill gold">Esfuerzo: 65 a 80 hs</span>
+      </div>
+    </div>
+    <div class="stage-body">
+      <div class="stage-objective">
+        <strong>Objetivo del Hito:</strong> Incorporar el canal de comunicación confidencial directo, plantillas de mensajería en un clic y realizar las pruebas finales de rendimiento y compatibilidad multi-dispositivo.
+      </div>
+      <div class="screen-list">
+        <div class="screen-item">
+          <div class="screen-info">
+            <div class="screen-name">1. Canal de Chat Confidencial Consultorio-Paciente</div>
+            <p class="screen-desc">
+              Mensajería privada individual entre Natalia o Nutrición y cada paciente, manteniendo el historial médico y las consultas centralizadas dentro de la app para proteger la privacidad personal.
+            </p>
+          </div>
+          <div class="screen-hours">30 a 35 hs</div>
+        </div>
+
+        <div class="screen-item">
+          <div class="screen-info">
+            <div class="screen-name">2. Botonera de Respuestas Rápidas / Plantillas de 1 Clic</div>
+            <p class="screen-desc">
+              Atajos de comunicación predefinidos para agilizar respuestas cotidianas (ej.: "Recordar ayuno de 8hs", "Tus estudios fueron cargados", "Recordá registrar tu peso semanal").
+            </p>
+          </div>
+          <div class="screen-hours">15 a 20 hs</div>
+        </div>
+
+        <div class="screen-item">
+          <div class="screen-info">
+            <div class="screen-name">3. Sistema de Avisos, Pruebas Multi-dispositivo y Despliegue en Producción</div>
+            <p class="screen-desc">
+              Notificaciones de agenda, control de calidad exhaustivo en Mac (Safari/Chrome), iPad, iPhone y Android, y pase a producción con monitorización activa.
+            </p>
+          </div>
+          <div class="screen-hours">20 a 25 hs</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 03: Arquitectura de Pantallas -->
+  <div class="page-break"></div>
+
+  <div class="chapter-header">
+    <span class="chapter-num">03.</span>
+    <h2 class="chapter-title">Mapa Completo de Pantallas de la Aplicación (12 Vistas)</h2>
+  </div>
+
+  <div class="screens-map-grid">
+    <!-- Columna A: Paciente -->
+    <div class="map-column">
+      <div class="map-column-title">
+        <span>A. Pantallas del Celular de la Paciente</span>
+        <span class="map-badge clinical">6 Vistas Móviles</span>
+      </div>
+
+      <div class="map-item">
+        <span class="stage-ref">Etapa 1</span>
+        <strong>1. Pantalla de Ingreso (Login Paciente)</strong><br>
+        Acceso simplificado con correo/clave y asistente de instalación PWA en el teléfono.
+      </div>
+
+      <div class="map-item">
+        <span class="stage-ref">Etapa 1</span>
+        <strong>2. Inicio: "Mi Próxima Cita" + Video</strong><br>
+        Fecha, hora, tratamiento e indicaciones con reproductor integrado de micro-video (5-15s).
+      </div>
+
+      <div class="map-item">
+        <span class="stage-ref">Etapa 2</span>
+        <strong>3. Carga Semanal de Controles</strong><br>
+        Campos simplificados para registrar peso, saturación en sangre y medidas corporales.
+      </div>
+
+      <div class="map-item">
+        <span class="stage-ref">Etapa 2</span>
+        <strong>4. Vista: "Mi Evolución"</strong><br>
+        Gráfico interactivo de tendencia que muestra los progresos obtenidos semana a semana.
+      </div>
+
+      <div class="map-item">
+        <span class="stage-ref">Etapa 2</span>
+        <strong>5. Mis Suplementos, Indicaciones y PDFs</strong><br>
+        Consulta de esquemas activos e historial de analíticas o planes descargables en PDF.
+      </div>
+
+      <div class="map-item">
+        <span class="stage-ref">Etapa 3</span>
+        <strong>6. Chat con el Consultorio y Avisos</strong><br>
+        Canal directo de consultas y bandeja de recordatorios de citas y procedimientos.
+      </div>
+    </div>
+
+    <!-- Columna B: Consultorio -->
+    <div class="map-column">
+      <div class="map-column-title">
+        <span>B. Suite del Consultorio (Mac / iPad / iPhone)</span>
+        <span class="map-badge gold">6 Vistas Profesionales</span>
+      </div>
+
+      <div class="map-item">
+        <span class="stage-ref">Etapa 1</span>
+        <strong>1. Acceso Diferenciado por Roles</strong><br>
+        Ingreso segmentado para Natalia (Cirugía/Longevidad), Nutrición y Administración.
+      </div>
+
+      <div class="map-item">
+        <span class="stage-ref">Etapa 1-2</span>
+        <strong>2. Panel Principal (Resumen Diario)</strong><br>
+        Indicadores de pacientes activos, turnos agendados y alertas de autocargas del día.
+      </div>
+
+      <div class="map-item">
+        <span class="stage-ref">Etapa 1</span>
+        <strong>3. Padrón, Buscador y Alta de Paciente</strong><br>
+        Buscador en tiempo real por DNI/nombre y formulario de registro de historia base.
+      </div>
+
+      <div class="map-item">
+        <span class="stage-ref">Etapa 1</span>
+        <strong>4. Asignador de Citas y Gestor Multimedia</strong><br>
+        Programación de turnos y biblioteca para subir y asociar los micro-videos (5-15s).
+      </div>
+
+      <div class="map-item">
+        <span class="stage-ref">Etapa 2</span>
+        <strong>5. Ficha Clínica Integral del Paciente</strong><br>
+        Curvas evolutivas en vivo, prescripción de suplementación y gestión de documentos PDF.
+      </div>
+
+      <div class="map-item">
+        <span class="stage-ref">Etapa 3</span>
+        <strong>6. Panel de Chat + Botonera de Plantillas</strong><br>
+        Consola de atención a pacientes con disparadores preconfigurados de 1 clic.
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 04: Presupuesto y Cronograma -->
+  <div class="avoid-break">
+    <div class="chapter-header">
+      <span class="chapter-num">04.</span>
+      <h2 class="chapter-title">Resumen de Tiempos y Presupuesto de Ingeniería</h2>
+    </div>
+
+    <div class="scope-notice">
+      <strong>Alcance técnico de la cotización:</strong> El presente presupuesto comprende en forma exclusiva los honorarios profesionales de <strong>Facundo y el equipo de desarrollo técnico</strong> (arquitectura de base de datos, programación backend/frontend multi-dispositivo, control de calidad y despliegue).<br>
+      <em>Nota de coordinación con diseño:</em> No incluye los honorarios del estudio visual externo (Serie Cero Design), quienes presupuestarán su labor de forma independiente. Nuestro equipo técnico implementará de forma rigurosa las especificaciones gráficas y de identidad provistas por el estudio.
+    </div>
+
+    <div class="table-wrapper">
+      <table class="finance-table">
+        <thead>
+          <tr>
+            <th>Etapa</th>
+            <th>Enfoque Técnico y Operativo</th>
+            <th>Pantallas y Módulos</th>
+            <th>Cronograma</th>
+            <th>Horas Código</th>
+            <th>Inversión (Desarrollo)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Etapa 1 (MVP)</strong></td>
+            <td><strong>Base, Agenda y Videos Cortos</strong></td>
+            <td>Login con roles, Dashboard consultorio, Padrón y alta, Agenda, Repositorio de micro-videos y Vista paciente "Mi Cita".</td>
+            <td>3 a 4 semanas</td>
+            <td>110 a 130 hs</td>
+            <td class="amount-cell">USD 1.250</td>
+          </tr>
+          <tr>
+            <td><strong>Etapa 2</strong></td>
+            <td><strong>Seguimiento Semanal, Gráficos y PDFs</strong></td>
+            <td>Portal paciente de autocarga, Gráficos de tendencias en vivo, Feed de novedades, Módulo de suplementación y Repositorio PDF.</td>
+            <td>3 semanas</td>
+            <td>90 a 110 hs</td>
+            <td class="amount-cell">USD 1.000</td>
+          </tr>
+          <tr>
+            <td><strong>Etapa 3</strong></td>
+            <td><strong>Chat Directo y Mensajes en 1 Clic</strong></td>
+            <td>Chat confidencial médica-paciente, Botonera de plantillas rápidas, Avisos de citas y QA exhaustivo multi-dispositivo.</td>
+            <td>2 a 3 semanas</td>
+            <td>65 a 80 hs</td>
+            <td class="amount-cell">USD 750</td>
+          </tr>
+          <tr class="total-row">
+            <td>TOTAL</td>
+            <td>Ecosistema Completo Operativo</td>
+            <td>12 vistas funcionales en Mac, iPad, iPhone y móviles de pacientes.</td>
+            <td>8 a 10 semanas</td>
+            <td>265 a 320 hs</td>
+            <td class="amount-cell total">USD 3.000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SECTION 05: Esquema de Pagos, Equipo y Mantenimiento -->
+  <div class="page-break"></div>
+
+  <div class="chapter-header">
+    <span class="chapter-num">05.</span>
+    <h2 class="chapter-title">Esquema de Pagos, Organización del Equipo y Mantenimiento</h2>
+  </div>
+
+  <!-- Pagos -->
+  <div class="avoid-break">
+    <h3 style="font-size: 13.5px; font-weight: 700; color: var(--ink-primary); margin: 0 0 7px 0;">
+      1. Modalidad de Pago por Avance de Hitos (Flexible y a Conversar)
+    </h3>
+    <p style="font-size: 11.5px; color: var(--ink-secondary); margin: 0 0 12px 0; line-height: 1.5;">
+      El siguiente esquema se formula como referencia comercial recomendada (50% de anticipo al inicio de cada etapa y 50% contra entrega funcional del hito). <strong>Los plazos y la distribución de los pagos se adaptan a la comodidad y flujo financiero del consultorio.</strong>
+    </p>
+
+    <div class="payments-grid">
+      <div class="payment-card">
+        <div class="payment-stage-header">
+          <div class="payment-stage-title">Etapa 1: MVP Funcional</div>
+          <div class="payment-total">USD 1.250</div>
+        </div>
+        <div class="payment-step">
+          <span class="payment-step-label">Inicio de etapa:</span>
+          <span class="payment-step-val">USD 625</span>
+        </div>
+        <div class="payment-step">
+          <span class="payment-step-label">Entrega funcional (Sem. 3-4):</span>
+          <span class="payment-step-val">USD 625</span>
+        </div>
+      </div>
+
+      <div class="payment-card">
+        <div class="payment-stage-header">
+          <div class="payment-stage-title">Etapa 2: Seguimiento Continuo</div>
+          <div class="payment-total">USD 1.000</div>
+        </div>
+        <div class="payment-step">
+          <span class="payment-step-label">Inicio de etapa:</span>
+          <span class="payment-step-val">USD 500</span>
+        </div>
+        <div class="payment-step">
+          <span class="payment-step-label">Entrega funcional (Sem. 6-7):</span>
+          <span class="payment-step-val">USD 500</span>
+        </div>
+      </div>
+
+      <div class="payment-card">
+        <div class="payment-stage-header">
+          <div class="payment-stage-title">Etapa 3: Chat y Pase a Producción</div>
+          <div class="payment-total">USD 750</div>
+        </div>
+        <div class="payment-step">
+          <span class="payment-step-label">Inicio de etapa:</span>
+          <span class="payment-step-val">USD 375</span>
+        </div>
+        <div class="payment-step">
+          <span class="payment-step-label">Pase a producción (Sem. 8-10):</span>
+          <span class="payment-step-val">USD 375</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Áreas de Trabajo -->
+  <div class="avoid-break" style="margin-top: 20px;">
+    <h3 style="font-size: 13.5px; font-weight: 700; color: var(--ink-primary); margin: 0 0 9px 0;">
+      2. Áreas de Especialidad Cubiertas por el Equipo de Desarrollo
+    </h3>
+    <div class="team-grid">
+      <div class="team-box">
+        <div class="team-role">Dirección de Proyecto &amp; Scrum Master (Facundo)</div>
+        <p class="team-desc">
+          Planificación de sprints, coordinación técnica con el consultorio, seguimiento de entregables y enlace metodológico con el estudio Serie Cero Design.
+        </p>
+      </div>
+
+      <div class="team-box">
+        <div class="team-role">Ingeniería Backend &amp; Base de Datos Realtime</div>
+        <p class="team-desc">
+          Modelado relacional en PostgreSQL, configuración del puente reactivo de datos en tiempo real y arquitectura de autenticación por roles médicos.
+        </p>
+      </div>
+
+      <div class="team-box">
+        <div class="team-role">Desarrollo Frontend Multi-dispositivo</div>
+        <p class="team-desc">
+          Programación de las 12 vistas con precisión estética y funcional, optimizadas para pantallas de escritorio Mac, iPad y teléfonos móviles de pacientes.
+        </p>
+      </div>
+
+      <div class="team-box">
+        <div class="team-role">Control de Calidad (QA), Seguridad y DevOps</div>
+        <p class="team-desc">
+          Verificación exhaustiva de compatibilidad cross-device, auditoría de seguridad de datos clínicos, optimización de video y despliegue en la nube.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Opciones y Mantenimiento -->
+  <div class="avoid-break" style="margin-top: 18px;">
+    <h3 style="font-size: 13.5px; font-weight: 700; color: var(--ink-primary); margin: 0 0 9px 0;">
+      3. Servicios Complementarios y Mantenimiento Mensual (Post-Lanzamiento)
+    </h3>
+    <div class="options-box">
+      <div class="option-row">
+        <div style="font-weight: 700; color: var(--accent-clinical); width: 220px; flex-shrink: 0;">
+          Migración Inicial de Pacientes:
+        </div>
+        <div style="color: var(--ink-secondary);">
+          <strong>Completamente Bonificada en Etapa 1.</strong> Procesamiento e importación del padrón existente (~200 pacientes) desde planillas CSV/Excel provistas por el software administrativo actual.
+        </div>
+      </div>
+      <div class="option-row">
+        <div style="font-weight: 700; color: var(--accent-gold-dark); width: 220px; flex-shrink: 0;">
+          Abono Sugerido de Infraestructura:<br>
+          <span style="font-size: 10.5px; font-weight: 500; color: var(--ink-muted);">(USD 80 a USD 120 / mes)</span>
+        </div>
+        <div style="color: var(--ink-secondary);">
+          Rige a partir del lanzamiento final en producción. Cubre servidores en la nube, almacenamiento seguro de micro-videos y documentos PDF, copias de resguardo periódicas de base de datos y soporte técnico prioritario ante consultas del consultorio.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 06: Anexo Técnico y Metodología -->
+  <div class="page-break"></div>
+
+  <div class="chapter-header">
+    <span class="chapter-num">06.</span>
+    <h2 class="chapter-title">Anexo Técnico, Arquitectura y Metodología Scrum</h2>
+  </div>
+
+  <div class="avoid-break">
+    <div class="req-grid">
+      <div class="req-card">
+        <div class="req-card-title">Requerimientos Funcionales (RF)</div>
+        <div class="req-item"><strong>RF-01 (Accesos):</strong> Autenticación segura con redirección automática por rol (Médica, Nutrición, Recepción, Paciente).</div>
+        <div class="req-item"><strong>RF-02 (Dashboard):</strong> Tablero en vivo con indicadores de pacientes activos, agenda del día y alertas de novedades.</div>
+        <div class="req-item"><strong>RF-03 (Padrón):</strong> Alta, modificación y búsqueda en tiempo real por apellido, nombre o DNI.</div>
+        <div class="req-item"><strong>RF-04 (Micro-Videos):</strong> Asociación de cápsulas audiovisuales breves (5 a 15s) según el procedimiento programado.</div>
+        <div class="req-item"><strong>RF-05 (Puente Reactivo):</strong> Autocarga semanal de peso/saturación con reflejo inmediato en curvas evolutivas.</div>
+        <div class="req-item"><strong>RF-06 (Tratamientos &amp; PDFs):</strong> Prescripción de suplementos con estado (Activo/Completado) y repositorio PDF.</div>
+        <div class="req-item"><strong>RF-07 (Mensajería):</strong> Chat individual consultorio-paciente con botonera de plantillas rápidas.</div>
+      </div>
+
+      <div class="req-card">
+        <div class="req-card-title">Requerimientos No Funcionales (RNF)</div>
+        <div class="req-item"><strong>RNF-01 (Multi-dispositivo 3 Breakpoints):</strong> Diseño adaptable optimizado para Desktop (>1024px Mac), Tablet (768-1024px iPad) y Mobile (&lt;768px iPhone/Android).</div>
+        <div class="req-item"><strong>RNF-02 (Sincronización Reactiva &lt;1s):</strong> Transmisión de cambios entre consultorio y paciente en menos de 1 segundo mediante WebSockets / subscriptions.</div>
+        <div class="req-item"><strong>RNF-03 (Entrega Rápida Multimedia):</strong> Carga instantánea de cápsulas de video breves optimizadas sin saturar el ancho de banda del móvil.</div>
+        <div class="req-item"><strong>RNF-04 (Seguridad de Datos Clínicos):</strong> Cifrado de datos en tránsito y en reposo con políticas de acceso por rol (Row-Level Security).</div>
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="tech-stack-row">
+      <div class="stack-card">
+        <div class="stack-label">Frontend &amp; PWA</div>
+        <div class="stack-val">Next.js + React</div>
+        <div class="stack-sub">TypeScript · Tailwind CSS</div>
+      </div>
+      <div class="stack-card">
+        <div class="stack-label">Base de Datos &amp; Realtime</div>
+        <div class="stack-val">PostgreSQL</div>
+        <div class="stack-sub">Supabase · Prisma ORM</div>
+      </div>
+      <div class="stack-card">
+        <div class="stack-label">Almacenamiento Multimedia</div>
+        <div class="stack-val">Cloudflare R2 / S3</div>
+        <div class="stack-sub">Micro-videos &amp; PDFs</div>
+      </div>
+      <div class="stack-card">
+        <div class="stack-label">Metodología Ágil</div>
+        <div class="stack-val">Scrum (5 Sprints)</div>
+        <div class="stack-sub">Demos cada 2 semanas</div>
+      </div>
+    </div>
+
+    <div class="editorial-lead" style="margin-top: 16px;">
+      <strong>Dinámica de Trabajo Ágil (Scrum):</strong> El proyecto se articula en <strong>5 Sprints de 2 semanas</strong> de duración. Al término de cada etapa se realizará una demostración funcional interactiva (<em>Sprint Review</em>) para validar conjuntamente los avances logrados y acordar la activación de la siguiente fase según los criterios de aceptación (<em>Definition of Done</em>).
+    </div>
+  </div>
+
+  <!-- Sign-off Block -->
+  <div class="signoff-section">
+    <div style="font-size: 12.5px; font-weight: 700; color: var(--ink-primary); margin-bottom: 4px;">
+      Conformidad del Plan de Desarrollo y Presupuesto de Ingeniería
+    </div>
+    <div style="font-size: 11.5px; color: var(--ink-secondary);">
+      Documento elaborado para formalizar las bases de ingeniería, plazos y modalidades de trabajo para el desarrollo de la aplicación del consultorio.
+    </div>
+
+    <div class="signoff-grid">
+      <div class="signoff-box">
+        <div class="signoff-name">Dra. Natalia Alfonso</div>
+        <div class="signoff-role">Titular del Consultorio · Cirugía Estética &amp; Longevidad</div>
+      </div>
+      <div class="signoff-box">
+        <div class="signoff-name">Facundo</div>
+        <div class="signoff-role">Dirección de Proyecto e Ingeniería de Desarrollo</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

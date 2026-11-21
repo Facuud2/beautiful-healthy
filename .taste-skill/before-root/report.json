@@ -1,0 +1,1380 @@
+{
+ "url": "http://localhost:3000/",
+ "at": "2026-10-20T19:51:29.329Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 1,
+   "filled": [
+    0.27
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 900,
+     "screens": 1,
+     "words": 17,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 13,
+     "sections": 0,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Móvil",
+     "words": 1,
+     "chars": 5,
+     "lines": 1,
+     "size": 12,
+     "vw": 0.8,
+     "font": "Plus Jakarta Sans",
+     "weight": 600,
+     "tracking": 0,
+     "leading": 1.33,
+     "top": 48,
+     "tag": "span",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": null,
+    "headings": [],
+    "headingSummary": {
+     "count": 0,
+     "maxLines": 0,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.97,
+       "mono": false
+      },
+      {
+       "family": "ui-monospace",
+       "share": 0.03,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      11,
+      12
+     ],
+     "sizeCount": 2,
+     "notLoaded": [],
+     "body": null,
+     "measureChars": null,
+     "max": {
+      "size": 12,
+      "vw": 0.8,
+      "font": "Plus Jakarta Sans",
+      "text": "Móvil"
+     },
+     "monoShare": 0.03,
+     "monoProseShare": 0.03,
+     "monoFamilies": [
+      "ui-monospace"
+     ],
+     "monoSamples": [
+      "86%"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.95,
+     "smallText": 3
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#faf7f5",
+     "bodyBgHsl": {
+      "h": 24,
+      "s": 0.33,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#faf7f5",
+       "top": 0,
+       "hsl": {
+        "h": 24,
+        "s": 0.33,
+        "l": 0.97
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#7d726d",
+       "share": 0.48
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.22
+      },
+      {
+       "color": "#2a2421",
+       "share": 0.13
+      },
+      {
+       "color": "#3b7a57",
+       "share": 0.1
+      },
+      {
+       "color": "#c5a059",
+       "share": 0.06
+      }
+     ],
+     "button": {
+      "bg": "#d4af37",
+      "hsl": {
+       "h": 46,
+       "s": 0.65,
+       "l": 0.52
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": [
+      {
+       "text": "iPhone",
+       "ratio": 2.5,
+       "need": 4.5,
+       "size": 11,
+       "fg": "#c5a059",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "Web / Escritorio",
+       "ratio": 4,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#7d726d",
+       "bg": "#f4ebe6"
+      },
+      {
+       "text": "Portal Clienta / Paciente",
+       "ratio": 4,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#7d726d",
+       "bg": "#f4ebe6"
+      },
+      {
+       "text": "Android",
+       "ratio": 4,
+       "need": 4.5,
+       "size": 11,
+       "fg": "#7d726d",
+       "bg": "#f4ebe6"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 4,
+     "radius": 10,
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 2,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Móvil",
+      "Cirujana Estética",
+      "Girar",
+      "Aviso Push"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 1,
+     "shadowOverlay": 3,
+     "shadowSamples": [
+      "div.relative.rounded-[50px] → rgba(197, 160, 89, 0.22) 0px 25px 60px -12px, rgba(197, 160, 89, 0.35) 0px 0px 0"
+     ],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.relative.rounded-[50px] → linear-gradient(rgb(244, 235, 230), rgb(239, 230, 223), rgb(232, 221, 213))"
+     ],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "div.w-full.h-8 312px",
+      "div.w-full.h-4 312px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 5,
+     "boxRadius": 99,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "iframe",
+      "ratio": 0.16
+     }
+    ],
+    "nav": null,
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 900,
+    "margins": {
+     "left": 564,
+     "right": 564
+    },
+    "sections": [],
+    "gaps": [],
+    "h1s": [],
+    "edgeText": [],
+    "edges": [],
+    "leftBlocks": 0,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.33,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 540,
+     "h": 780
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "dark": false,
+    "ground": "#faf7f5",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 306,
+     "right": 303
+    },
+    "hero": {
+     "text": "Móvil",
+     "words": 1,
+     "chars": 5,
+     "lines": 1,
+     "size": 12,
+     "vw": 0.8,
+     "font": "Plus Jakarta Sans",
+     "weight": 600,
+     "tracking": 0,
+     "leading": 1.33,
+     "top": 48,
+     "tag": "span",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 2,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 3,
+     "radii": [
+      [
+       16,
+       1
+      ],
+      [
+       50,
+       1
+      ],
+      [
+       38,
+       1
+      ]
+     ],
+     "heavyBorders": 1,
+     "borderSamples": [
+      "#c5a059 on #faf7f5 (2.3:1)"
+     ],
+     "heavyShadows": 3,
+     "softShadows": 0,
+     "shadowSamples": [
+      "rgba(197, 160, 89, 0.08) 0px 10px 30px -5px",
+      "rgba(197, 160, 89, 0.22) 0px 25px 60px -12px",
+      "rgba(197, 160, 89, 0.35) 0px 0px 0px 1px"
+     ],
+     "glass": 1
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 1,
+     "tabularShare": 0,
+     "kpiMax": 11
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 1,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      11,
+      12
+     ]
+    },
+    "title": null,
+    "colourShare": 0.016
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 1,
+   "filled": [
+    0.43
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 1024,
+     "screens": 1,
+     "words": 17,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 13,
+     "sections": 0,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Móvil",
+     "words": 1,
+     "chars": 5,
+     "lines": 1,
+     "size": 12,
+     "vw": 1.6,
+     "font": "Plus Jakarta Sans",
+     "weight": 600,
+     "tracking": 0,
+     "leading": 1.33,
+     "top": 48,
+     "tag": "span",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": null,
+    "headings": [],
+    "headingSummary": {
+     "count": 0,
+     "maxLines": 0,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.97,
+       "mono": false
+      },
+      {
+       "family": "ui-monospace",
+       "share": 0.03,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      11,
+      12
+     ],
+     "sizeCount": 2,
+     "notLoaded": [],
+     "body": null,
+     "measureChars": null,
+     "max": {
+      "size": 12,
+      "vw": 1.6,
+      "font": "Plus Jakarta Sans",
+      "text": "Móvil"
+     },
+     "monoShare": 0.03,
+     "monoProseShare": 0.03,
+     "monoFamilies": [
+      "ui-monospace"
+     ],
+     "monoSamples": [
+      "92%"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.95,
+     "smallText": 3
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#faf7f5",
+     "bodyBgHsl": {
+      "h": 24,
+      "s": 0.33,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#faf7f5",
+       "top": 0,
+       "hsl": {
+        "h": 24,
+        "s": 0.33,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#f4ebe6",
+       "top": 248,
+       "hsl": {
+        "h": 21,
+        "s": 0.39,
+        "l": 0.93
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#7d726d",
+       "share": 0.48
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.22
+      },
+      {
+       "color": "#2a2421",
+       "share": 0.13
+      },
+      {
+       "color": "#3b7a57",
+       "share": 0.1
+      },
+      {
+       "color": "#c5a059",
+       "share": 0.06
+      }
+     ],
+     "button": {
+      "bg": "#d4af37",
+      "hsl": {
+       "h": 46,
+       "s": 0.65,
+       "l": 0.52
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": [
+      {
+       "text": "iPhone",
+       "ratio": 2.5,
+       "need": 4.5,
+       "size": 11,
+       "fg": "#c5a059",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "Web / Escritorio",
+       "ratio": 4,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#7d726d",
+       "bg": "#f4ebe6"
+      },
+      {
+       "text": "Portal Clienta / Paciente",
+       "ratio": 4,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#7d726d",
+       "bg": "#f4ebe6"
+      },
+      {
+       "text": "Android",
+       "ratio": 4,
+       "need": 4.5,
+       "size": 11,
+       "fg": "#7d726d",
+       "bg": "#f4ebe6"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 4,
+     "radius": 10,
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 2,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Móvil",
+      "Cirujana Estética",
+      "Girar",
+      "Aviso Push"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 1,
+     "shadowOverlay": 3,
+     "shadowSamples": [
+      "div.relative.rounded-[50px] → rgba(197, 160, 89, 0.22) 0px 25px 60px -12px, rgba(197, 160, 89, 0.35) 0px 0px 0"
+     ],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.relative.rounded-[50px] → linear-gradient(rgb(244, 235, 230), rgb(239, 230, 223), rgb(232, 221, 213))"
+     ],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "div.w-full.h-8 334px",
+      "div.w-full.h-4 334px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 5,
+     "boxRadius": 99,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "iframe",
+      "ratio": 0.3
+     }
+    ],
+    "nav": null,
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 1024,
+    "margins": {
+     "left": 217,
+     "right": 217
+    },
+    "sections": [
+     {
+      "sel": "div.absolute.top-1/4",
+      "tag": "div",
+      "top": 256,
+      "height": 480,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.absolute.bottom-1/4",
+      "tag": "div",
+      "top": 248,
+      "height": 520,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": true,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [],
+    "edgeText": [
+     {
+      "text": "Móvil",
+      "side": "left",
+      "px": 2
+     }
+    ],
+    "edges": [],
+    "leftBlocks": 0,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "dark": false,
+    "ground": "#faf7f5",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 2,
+     "right": -33
+    },
+    "hero": {
+     "text": "Móvil",
+     "words": 1,
+     "chars": 5,
+     "lines": 1,
+     "size": 12,
+     "vw": 1.6,
+     "font": "Plus Jakarta Sans",
+     "weight": 600,
+     "tracking": 0,
+     "leading": 1.33,
+     "top": 48,
+     "tag": "span",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 1,
+     "firstScreen": 1,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 2,
+     "radii": [
+      [
+       50,
+       1
+      ],
+      [
+       38,
+       1
+      ]
+     ],
+     "heavyBorders": 1,
+     "borderSamples": [
+      "#c5a059 on #faf7f5 (2.3:1)"
+     ],
+     "heavyShadows": 2,
+     "softShadows": 0,
+     "shadowSamples": [
+      "rgba(197, 160, 89, 0.22) 0px 25px 60px -12px",
+      "rgba(197, 160, 89, 0.35) 0px 0px 0px 1px"
+     ],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 1,
+     "tabularShare": 0,
+     "kpiMax": 11
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 1,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      11,
+      12
+     ]
+    },
+    "title": null,
+    "colourShare": 0.034
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    0.8,
+    0.81
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 860,
+     "screens": 1,
+     "words": 17,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 13,
+     "sections": 0,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Móvil",
+     "words": 1,
+     "chars": 5,
+     "lines": 1,
+     "size": 12,
+     "vw": 3.1,
+     "font": "Plus Jakarta Sans",
+     "weight": 600,
+     "tracking": 0,
+     "leading": 1.33,
+     "top": 48,
+     "tag": "span",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": null,
+    "headings": [],
+    "headingSummary": {
+     "count": 0,
+     "maxLines": 0,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.97,
+       "mono": false
+      },
+      {
+       "family": "ui-monospace",
+       "share": 0.03,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      11,
+      12
+     ],
+     "sizeCount": 2,
+     "notLoaded": [],
+     "body": null,
+     "measureChars": null,
+     "max": {
+      "size": 12,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "text": "Móvil"
+     },
+     "monoShare": 0.03,
+     "monoProseShare": 0.03,
+     "monoFamilies": [
+      "ui-monospace"
+     ],
+     "monoSamples": [
+      "86%"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.95,
+     "smallText": 3
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#faf7f5",
+     "bodyBgHsl": {
+      "h": 24,
+      "s": 0.33,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#faf7f5",
+       "top": 0,
+       "hsl": {
+        "h": 24,
+        "s": 0.33,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#f4ebe6",
+       "top": 125,
+       "hsl": {
+        "h": 21,
+        "s": 0.39,
+        "l": 0.93
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#7d726d",
+       "share": 0.48
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.22
+      },
+      {
+       "color": "#2a2421",
+       "share": 0.13
+      },
+      {
+       "color": "#3b7a57",
+       "share": 0.1
+      },
+      {
+       "color": "#c5a059",
+       "share": 0.06
+      }
+     ],
+     "button": {
+      "bg": "#d4af37",
+      "hsl": {
+       "h": 46,
+       "s": 0.65,
+       "l": 0.52
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": [
+      {
+       "text": "iPhone",
+       "ratio": 2.5,
+       "need": 4.5,
+       "size": 11,
+       "fg": "#c5a059",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "Web / Escritorio",
+       "ratio": 4,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#7d726d",
+       "bg": "#f4ebe6"
+      },
+      {
+       "text": "Android",
+       "ratio": 4,
+       "need": 4.5,
+       "size": 11,
+       "fg": "#7d726d",
+       "bg": "#f4ebe6"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 4,
+     "radius": 10,
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 2,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Móvil",
+      "Cirujana Estética",
+      "Girar",
+      "Aviso Push"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 1,
+     "shadowOverlay": 3,
+     "shadowSamples": [
+      "div.relative.rounded-[50px] → rgba(197, 160, 89, 0.22) 0px 25px 60px -12px, rgba(197, 160, 89, 0.35) 0px 0px 0"
+     ],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.relative.rounded-[50px] → linear-gradient(rgb(244, 235, 230), rgb(239, 230, 223), rgb(232, 221, 213))"
+     ],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "div.w-full.h-8 312px",
+      "div.w-full.h-4 312px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 5,
+     "boxRadius": 99,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "iframe",
+      "ratio": 0.62
+     }
+    ],
+    "nav": null,
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 860,
+    "margins": {
+     "left": 39,
+     "right": 39
+    },
+    "sections": [
+     {
+      "sel": "div.absolute.top-1/4",
+      "tag": "div",
+      "top": 215,
+      "height": 480,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.absolute.bottom-1/4",
+      "tag": "div",
+      "top": 125,
+      "height": 520,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.relative.rounded-[50px]",
+      "tag": "div",
+      "top": 67,
+      "height": 726,
+      "words": 1,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 39,
+      "right": 39,
+      "textLeft": 60,
+      "textRight": 310,
+      "fullBleed": false,
+      "footer": true,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [],
+    "edgeText": [
+     {
+      "text": "Cirujana Estética",
+      "side": "left",
+      "px": 6
+     },
+     {
+      "text": "iPhone",
+      "side": "right",
+      "px": 7
+     }
+    ],
+    "edges": [],
+    "leftBlocks": 0,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "dark": false,
+    "ground": "#faf7f5",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 6,
+     "right": -222
+    },
+    "hero": {
+     "text": "Móvil",
+     "words": 1,
+     "chars": 5,
+     "lines": 1,
+     "size": 12,
+     "vw": 3.1,
+     "font": "Plus Jakarta Sans",
+     "weight": 600,
+     "tracking": 0,
+     "leading": 1.33,
+     "top": 48,
+     "tag": "span",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 1,
+     "firstScreen": 1,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 2,
+     "radii": [
+      [
+       50,
+       1
+      ],
+      [
+       38,
+       1
+      ]
+     ],
+     "heavyBorders": 1,
+     "borderSamples": [
+      "#c5a059 on #faf7f5 (2.3:1)"
+     ],
+     "heavyShadows": 2,
+     "softShadows": 0,
+     "shadowSamples": [
+      "rgba(197, 160, 89, 0.22) 0px 25px 60px -12px",
+      "rgba(197, 160, 89, 0.35) 0px 0px 0px 1px"
+     ],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 1,
+     "tabularShare": 0,
+     "kpiMax": 11
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 1,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      11,
+      12
+     ]
+    },
+    "title": null,
+    "colourShare": 0.053
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "1 gradient fill(s): div.relative.rounded-[50px] → linear-gradient(rgb(244, 235, 230), rgb(239, 230, 223), rgb(232, 221, 213))",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "button-fx",
+   "width": 1440,
+   "message": "Buttons with gradient fill.",
+   "fix": "Flat fill, one colour.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (page background #faf7f5, section #faf7f5).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Unreadable text: \"iPhone\" 2.5:1 (#c5a059 on #ffffff)",
+   "fix": "Raise contrast to at least 4.5:1 for text, 3:1 for large display.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "hero-void",
+   "width": 1440,
+   "message": "33% of the first screen is one empty block (540×780px at 0,120).",
+   "fix": "Place the void on purpose or fill it: move the picture, the film or one fact into it, grow the headline to meet it, or shrink the screen to its content. A void reads as placed only when something closes it on the far side and it is the screen's one rest."
+  },
+  {
+   "level": "FAIL",
+   "id": "heavy-shadow",
+   "width": 1440,
+   "message": "3 panel shadow(s) heavy enough to read as floating: rgba(197, 160, 89, 0.08) 0px 10px 30px -5px | rgba(197, 160, 89, 0.22) 0px 25px 60px -12px | rgba(197, 160, 89, 0.35) 0px 0px 0px 1px",
+   "fix": "Panels sit on the ground: separate them with a fill one step from the ground or a quiet 1px border. A shadow, if any, is under 8% black with a small blur. Real overlays (menus, dialogs, popovers) may float.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "tiny-text",
+   "width": 1440,
+   "message": "100% of the text is under 13px.",
+   "fix": "Data and labels read at 13–14px; keep 11–12px for sublines and axis ticks.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "no-title",
+   "width": 1440,
+   "message": "The screen has no h1.",
+   "fix": "Name the screen in an h1 at the top of the canvas (18–28px): \"Overview\", \"Payouts\", the project's name.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "edge-text",
+   "width": 768,
+   "message": "1 text block(s) sit within 16px of the screen edge: \"Móvil\" (2px from the left)",
+   "fix": "Keep text inside the page margin (16–32px or more). Only display type deliberately bled past the edge may touch it.",
+   "alsoAt": [
+    390
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/home/facuud2/mediapp/.taste-skill/before-root/desktop-fold.jpg",
+   "pages": [
+    "/home/facuud2/mediapp/.taste-skill/before-root/desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/home/facuud2/mediapp/.taste-skill/before-root/tablet-fold.jpg",
+   "pages": [
+    "/home/facuud2/mediapp/.taste-skill/before-root/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/home/facuud2/mediapp/.taste-skill/before-root/mobile-fold.jpg",
+   "pages": [
+    "/home/facuud2/mediapp/.taste-skill/before-root/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

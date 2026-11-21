@@ -1,0 +1,1137 @@
+{
+ "url": "http://localhost:3000/",
+ "at": "2026-10-20T21:23:44.916Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    0.38,
+    0.36
+   ],
+   "motion": {
+    "elements": 3,
+    "css": 0,
+    "transitions": 2,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 948,
+     "screens": 1.1,
+     "words": 93,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 14,
+     "sections": 0,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 3,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 2,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "✓"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "MediApp · Dra. Valeria Montes · Consultorio Recoleta",
+     "words": 8,
+     "chars": 52,
+     "lines": 1,
+     "size": 14,
+     "vw": 1,
+     "font": "Geist",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1.5,
+     "top": -1,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "MediApp · Dra. Valeria Montes · Consultorio Recoleta",
+     "words": 8,
+     "lines": 1,
+     "size": 14,
+     "font": "Geist"
+    },
+    "headings": [],
+    "headingSummary": {
+     "count": 0,
+     "maxLines": 0,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Geist",
+       "share": 0.99,
+       "mono": false
+      },
+      {
+       "family": "Geist Mono",
+       "share": 0.01,
+       "mono": true
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [],
+     "sizeCount": 0,
+     "notLoaded": [
+      "Geist"
+     ],
+     "body": null,
+     "measureChars": null,
+     "max": {
+      "size": 16,
+      "vw": 1.1,
+      "font": "Geist",
+      "text": "Dra. Valeria Montes"
+     },
+     "monoShare": 0.01,
+     "monoProseShare": 0.01,
+     "monoFamilies": [
+      "Geist Mono"
+     ],
+     "monoSamples": [
+      "88%"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.04,
+     "centerShare": 0.16,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#faf7f5",
+     "bodyBgHsl": {
+      "h": 24,
+      "s": 0.33,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#faf7f5",
+       "top": 0,
+       "hsl": {
+        "h": 24,
+        "s": 0.33,
+        "l": 0.97
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2a2421",
+       "share": 0.44
+      },
+      {
+       "color": "#5c4e46",
+       "share": 0.3
+      },
+      {
+       "color": "#7d726d",
+       "share": 0.14
+      },
+      {
+       "color": "#8c6b23",
+       "share": 0.07
+      },
+      {
+       "color": "#801b2b",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#ead49b",
+      "hsl": {
+       "h": 43,
+       "s": 0.65,
+       "l": 0.76
+      },
+      "fg": "#2a2421"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 4,
+     "radius": 10,
+     "height": 30,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Móvil",
+      "Portal Paciente (DNI)",
+      "Aviso Push",
+      "Girar"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 6,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 18,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "iframe",
+      "ratio": 0.17
+     }
+    ],
+    "nav": null,
+    "fontsLoaded": [
+     "geist mono",
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 948,
+    "margins": {
+     "left": 373,
+     "right": 383
+    },
+    "sections": [],
+    "gaps": [],
+    "h1s": [],
+    "edgeText": [],
+    "edges": [],
+    "leftBlocks": 0,
+    "bodySize": 12,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.22,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 360,
+     "h": 780
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "dark": false,
+    "ground": "#faf7f5",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 373,
+     "right": 421
+    },
+    "hero": {
+     "text": "MediApp · Dra. Valeria Montes · Consultorio Recoleta",
+     "words": 8,
+     "chars": 52,
+     "lines": 1,
+     "size": 14,
+     "vw": 1,
+     "font": "Geist",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1.5,
+     "top": -1,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 3,
+     "firstScreen": 3,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 5,
+     "radii": [
+      [
+       18,
+       1
+      ],
+      [
+       20,
+       1
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       50,
+       1
+      ],
+      [
+       38,
+       1
+      ]
+     ],
+     "heavyBorders": 1,
+     "borderSamples": [
+      "#c5a059 on #efe6df (2:1)"
+     ],
+     "heavyShadows": 4,
+     "softShadows": 0,
+     "shadowSamples": [
+      "rgba(197, 160, 89, 0.08) 0px 10px 30px -5px",
+      "rgba(197, 160, 89, 0.08) 0px 10px 30px -5px",
+      "rgba(42, 36, 33, 0.08) 0px 8px 24px -4px"
+     ],
+     "glass": 0
+    },
+    "chips": {
+     "count": 1,
+     "hues": 1,
+     "samples": [
+      {
+       "hue": 21,
+       "size": 40,
+       "radius": "12px"
+      }
+     ]
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 1,
+     "tabularShare": 0,
+     "kpiMax": 12
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.85,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      11,
+      12,
+      14,
+      16
+     ]
+    },
+    "title": {
+     "text": "MediApp · Dra. Valeria Montes · Consultorio Recoleta",
+     "size": 14,
+     "top": -1
+    },
+    "colourShare": 0.008
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 1,
+   "filled": [
+    0.38
+   ],
+   "motion": {
+    "elements": 3,
+    "css": 0,
+    "transitions": 2,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 1024,
+     "screens": 1,
+     "words": 22,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 14,
+     "sections": 0,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 3,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "MediApp · Dra. Valeria Montes · Consultorio Recoleta",
+     "words": 8,
+     "chars": 52,
+     "lines": 1,
+     "size": 14,
+     "vw": 1.8,
+     "font": "Geist",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1.5,
+     "top": -1,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "MediApp · Dra. Valeria Montes · Consultorio Recoleta",
+     "words": 8,
+     "lines": 1,
+     "size": 14,
+     "font": "Geist"
+    },
+    "headings": [],
+    "headingSummary": {
+     "count": 0,
+     "maxLines": 0,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Geist",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [],
+     "sizeCount": 0,
+     "notLoaded": [
+      "Geist"
+     ],
+     "body": null,
+     "measureChars": null,
+     "max": {
+      "size": 12,
+      "vw": 1.6,
+      "font": "Geist",
+      "text": "Móvil"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.94,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#faf7f5",
+     "bodyBgHsl": {
+      "h": 24,
+      "s": 0.33,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#faf7f5",
+       "top": 0,
+       "hsl": {
+        "h": 24,
+        "s": 0.33,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#efe6df",
+       "top": 169,
+       "hsl": {
+        "h": 26,
+        "s": 0.33,
+        "l": 0.91
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2a2421",
+       "share": 0.66
+      },
+      {
+       "color": "#801b2b",
+       "share": 0.23
+      },
+      {
+       "color": "#143d28",
+       "share": 0.11
+      }
+     ],
+     "button": {
+      "bg": "#ead49b",
+      "hsl": {
+       "h": 43,
+       "s": 0.65,
+       "l": 0.76
+      },
+      "fg": "#2a2421"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 4,
+     "radius": 10,
+     "height": 30,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Móvil",
+      "Portal Paciente (DNI)",
+      "Aviso Push",
+      "Girar"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 5,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 18,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "iframe",
+      "ratio": 0.28
+     }
+    ],
+    "nav": null,
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 1024,
+    "margins": {
+     "left": 223,
+     "right": 223
+    },
+    "sections": [],
+    "gaps": [],
+    "h1s": [],
+    "edgeText": [],
+    "edges": [],
+    "leftBlocks": 0,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "dark": false,
+    "ground": "#faf7f5",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": -1,
+     "right": 238
+    },
+    "hero": {
+     "text": "MediApp · Dra. Valeria Montes · Consultorio Recoleta",
+     "words": 8,
+     "chars": 52,
+     "lines": 1,
+     "size": 14,
+     "vw": 1.8,
+     "font": "Geist",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1.5,
+     "top": -1,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 2,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 3,
+     "radii": [
+      [
+       18,
+       1
+      ],
+      [
+       50,
+       1
+      ],
+      [
+       38,
+       1
+      ]
+     ],
+     "heavyBorders": 1,
+     "borderSamples": [
+      "#c5a059 on #efe6df (2:1)"
+     ],
+     "heavyShadows": 3,
+     "softShadows": 0,
+     "shadowSamples": [
+      "rgba(197, 160, 89, 0.08) 0px 10px 30px -5px",
+      "rgba(42, 36, 33, 0.08) 0px 8px 24px -4px",
+      "rgb(214, 200, 190) 0px 0px 0px 1px"
+     ],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.85,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      11,
+      12,
+      14,
+      16
+     ]
+    },
+    "title": {
+     "text": "MediApp · Dra. Valeria Montes · Consultorio Recoleta",
+     "size": 14,
+     "top": -1
+    },
+    "colourShare": 0.018
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    0.73,
+    0.69
+   ],
+   "motion": {
+    "elements": 3,
+    "css": 0,
+    "transitions": 2,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 924,
+     "screens": 1.1,
+     "words": 21,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 14,
+     "sections": 0,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 3,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "MediApp · Dra. Valeria Montes · Consultorio Recoleta",
+     "words": 8,
+     "chars": 52,
+     "lines": 1,
+     "size": 14,
+     "vw": 3.6,
+     "font": "Geist",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1.5,
+     "top": -1,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "MediApp · Dra. Valeria Montes · Consultorio Recoleta",
+     "words": 8,
+     "lines": 1,
+     "size": 14,
+     "font": "Geist"
+    },
+    "headings": [],
+    "headingSummary": {
+     "count": 0,
+     "maxLines": 0,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Geist",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [],
+     "sizeCount": 0,
+     "notLoaded": [
+      "Geist"
+     ],
+     "body": null,
+     "measureChars": null,
+     "max": {
+      "size": 12,
+      "vw": 3.1,
+      "font": "Geist",
+      "text": "Móvil"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.94,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#faf7f5",
+     "bodyBgHsl": {
+      "h": 24,
+      "s": 0.33,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#faf7f5",
+       "top": 0,
+       "hsl": {
+        "h": 24,
+        "s": 0.33,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#efe6df",
+       "top": 132,
+       "hsl": {
+        "h": 26,
+        "s": 0.33,
+        "l": 0.91
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2a2421",
+       "share": 0.64
+      },
+      {
+       "color": "#801b2b",
+       "share": 0.25
+      },
+      {
+       "color": "#143d28",
+       "share": 0.12
+      }
+     ],
+     "button": {
+      "bg": "#ead49b",
+      "hsl": {
+       "h": 43,
+       "s": 0.65,
+       "l": 0.76
+      },
+      "fg": "#2a2421"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 3,
+     "radius": 10,
+     "height": 30,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Móvil",
+      "Portal Paciente (DNI)",
+      "Aviso Push"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 5,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 18,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "iframe",
+      "ratio": 0.6
+     }
+    ],
+    "nav": null,
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 924,
+    "margins": {
+     "left": 42,
+     "right": 42
+    },
+    "sections": [],
+    "gaps": [],
+    "h1s": [],
+    "edgeText": [],
+    "edges": [],
+    "leftBlocks": 0,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "dark": false,
+    "ground": "#faf7f5",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": -1,
+     "right": 47
+    },
+    "hero": {
+     "text": "MediApp · Dra. Valeria Montes · Consultorio Recoleta",
+     "words": 8,
+     "chars": 52,
+     "lines": 1,
+     "size": 14,
+     "vw": 3.6,
+     "font": "Geist",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1.5,
+     "top": -1,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 2,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 3,
+     "radii": [
+      [
+       18,
+       1
+      ],
+      [
+       50,
+       1
+      ],
+      [
+       38,
+       1
+      ]
+     ],
+     "heavyBorders": 1,
+     "borderSamples": [
+      "#c5a059 on #efe6df (2:1)"
+     ],
+     "heavyShadows": 3,
+     "softShadows": 0,
+     "shadowSamples": [
+      "rgba(197, 160, 89, 0.08) 0px 10px 30px -5px",
+      "rgba(42, 36, 33, 0.08) 0px 8px 24px -4px",
+      "rgb(214, 200, 190) 0px 0px 0px 1px"
+     ],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.84,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      11,
+      12,
+      14,
+      16
+     ]
+    },
+    "title": {
+     "text": "MediApp · Dra. Valeria Montes · Consultorio Recoleta",
+     "size": 14,
+     "top": -1
+    },
+    "colourShare": 0.021
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "width": 1440,
+   "message": "Emoji in the page: ✓",
+   "fix": "Remove. Use words or real imagery."
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (page background #faf7f5, section #faf7f5).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "font-fallback",
+   "width": 1440,
+   "message": "Typeface(s) declared but not loaded, so a fallback is rendering: Geist",
+   "fix": "Fix the font URL / family name, or the screenshots you are judging are not the design.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "heavy-shadow",
+   "width": 1440,
+   "message": "4 panel shadow(s) heavy enough to read as floating: rgba(197, 160, 89, 0.08) 0px 10px 30px -5px | rgba(197, 160, 89, 0.08) 0px 10px 30px -5px | rgba(42, 36, 33, 0.08) 0px 8px 24px -4px",
+   "fix": "Panels sit on the ground: separate them with a fill one step from the ground or a quiet 1px border. A shadow, if any, is under 8% black with a small blur. Real overlays (menus, dialogs, popovers) may float.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "tiny-text",
+   "width": 1440,
+   "message": "85% of the text is under 13px.",
+   "fix": "Data and labels read at 13–14px; keep 11–12px for sublines and axis ticks.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/home/facuud2/mediapp/.taste-skill/device-simulator-test-3/desktop-fold.jpg",
+   "pages": [
+    "/home/facuud2/mediapp/.taste-skill/device-simulator-test-3/desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/home/facuud2/mediapp/.taste-skill/device-simulator-test-3/tablet-fold.jpg",
+   "pages": [
+    "/home/facuud2/mediapp/.taste-skill/device-simulator-test-3/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/home/facuud2/mediapp/.taste-skill/device-simulator-test-3/mobile-fold.jpg",
+   "pages": [
+    "/home/facuud2/mediapp/.taste-skill/device-simulator-test-3/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

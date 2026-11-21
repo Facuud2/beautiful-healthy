@@ -1,0 +1,203 @@
+info:
+  contact: {}
+paths:
+  /api/v1/connect/all-tables:
+    get:
+      description: Conecta con todas las tablas de Supabase y obtiene un resumen completo
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Conectar y verificar todas las tablas
+      tags:
+      - test
+  /api/v1/inspect/tables:
+    get:
+      description: Obtiene la estructura de las tablas para verificar columnas
+      parameters:
+      - description: 'Nombre de la tabla a inspeccionar (default: pacientes)'
+        in: query
+        name: table
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Inspeccionar estructura de tablas
+      tags:
+      - test
+  /api/v1/pacientes:
+    get:
+      description: Obtiene todos los pacientes desde Supabase
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Obtener lista de pacientes
+      tags:
+      - pacientes
+  /api/v1/pacientes/{id}:
+    delete:
+      description: Elimina un paciente por ID
+      parameters:
+      - description: ID del paciente
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Eliminar paciente
+      tags:
+      - pacientes
+    get:
+      description: Obtiene un paciente específico por su ID
+      parameters:
+      - description: Patient ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Obtener paciente por ID
+      tags:
+      - pacientes
+    put:
+      consumes:
+      - application/json
+      description: Actualiza los datos de un paciente existente
+      parameters:
+      - description: ID del paciente
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Datos del paciente
+        in: body
+        name: paciente
+        required: true
+        schema:
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Actualizar paciente
+      tags:
+      - pacientes
+  /api/v1/test/supabase:
+    get:
+      description: Prueba la conexión con las tablas existentes en Supabase
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Probar conexión con Supabase
+      tags:
+      - test
+  /health:
+    get:
+      description: Verifica el estado del servicio y la base de datos
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Health check
+      tags:
+      - health
+  /login:
+    post:
+      consumes:
+      - application/json
+      description: Autenticación de usuario y generación de token JWT
+      parameters:
+      - description: Credenciales de acceso
+        in: body
+        name: loginReq
+        required: true
+        schema:
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Login de usuario
+      tags:
+      - auth
+swagger: "2.0"

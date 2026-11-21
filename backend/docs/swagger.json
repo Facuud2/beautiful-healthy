@@ -1,0 +1,255 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "contact": {}
+  },
+  "paths": {
+    "/api/v1/connect/all-tables": {
+      "get": {
+        "description": "Conecta con todas las tablas de Supabase y obtiene un resumen completo",
+        "produces": ["application/json"],
+        "tags": ["test"],
+        "summary": "Conectar y verificar todas las tablas",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/inspect/tables": {
+      "get": {
+        "description": "Obtiene la estructura de las tablas para verificar columnas",
+        "produces": ["application/json"],
+        "tags": ["test"],
+        "summary": "Inspeccionar estructura de tablas",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Nombre de la tabla a inspeccionar (default: pacientes)",
+            "name": "table",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/pacientes": {
+      "get": {
+        "description": "Obtiene todos los pacientes desde Supabase",
+        "produces": ["application/json"],
+        "tags": ["pacientes"],
+        "summary": "Obtener lista de pacientes",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/pacientes/{id}": {
+      "get": {
+        "description": "Obtiene un paciente específico por su ID",
+        "produces": ["application/json"],
+        "tags": ["pacientes"],
+        "summary": "Obtener paciente por ID",
+        "parameters": [
+          {
+            "type": "integer",
+            "description": "Patient ID",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        }
+      },
+      "put": {
+        "description": "Actualiza los datos de un paciente existente",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["pacientes"],
+        "summary": "Actualizar paciente",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "ID del paciente",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "description": "Datos del paciente",
+            "name": "paciente",
+            "in": "body",
+            "required": true,
+            "schema": { "type": "object" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "OK", "schema": { "type": "object", "additionalProperties": true } },
+          "400": { "description": "Bad Request", "schema": { "type": "object", "additionalProperties": true } },
+          "404": { "description": "Not Found", "schema": { "type": "object", "additionalProperties": true } },
+          "500": { "description": "Internal Server Error", "schema": { "type": "object", "additionalProperties": true } }
+        }
+      },
+      "delete": {
+        "description": "Elimina un paciente por ID",
+        "produces": ["application/json"],
+        "tags": ["pacientes"],
+        "summary": "Eliminar paciente",
+        "parameters": [
+          { "type": "string", "description": "ID del paciente", "name": "id", "in": "path", "required": true }
+        ],
+        "responses": {
+          "200": { "description": "OK", "schema": { "type": "object", "additionalProperties": true } },
+          "404": { "description": "Not Found", "schema": { "type": "object", "additionalProperties": true } },
+          "500": { "description": "Internal Server Error", "schema": { "type": "object", "additionalProperties": true } }
+        }
+      }
+    },
+    "/api/v1/test/supabase": {
+      "get": {
+        "description": "Prueba la conexión con las tablas existentes en Supabase",
+        "produces": ["application/json"],
+        "tags": ["test"],
+        "summary": "Probar conexión con Supabase",
+        "responses": {
+          "200": { "description": "OK", "schema": { "type": "object", "additionalProperties": true } }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "description": "Verifica el estado del servicio y la base de datos",
+        "produces": ["application/json"],
+        "tags": ["health"],
+        "summary": "Health check",
+        "responses": {
+          "200": { "description": "OK", "schema": { "type": "object", "additionalProperties": true } }
+        }
+      }
+    },
+    "/login": {
+      "post": {
+        "summary": "Login de usuario",
+        "description": "Autenticación de usuario y generación de token JWT",
+        "tags": ["auth"],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "loginReq",
+            "description": "Credenciales de acceso",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "required": ["email", "password"],
+              "properties": {
+                "email": { "type": "string", "example": "usuario@example.com" },
+                "password": { "type": "string", "example": "password123" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Login exitoso, devuelve JWT y datos del usuario",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "token": { "type": "string", "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." },
+                "refreshToken": { "type": "string", "example": "dGhpcy1pcy1hLXJlZnJlc2gtdG9rZW4..." },
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "id": { "type": "integer", "example": 1 },
+                    "email": { "type": "string", "example": "usuario@example.com" },
+                    "nombre": { "type": "string", "example": "Gabriel" }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Credenciales inválidas",
+            "schema": { "type": "object", "properties": { "error": { "type": "string", "example": "Email o contraseña incorrectos" } } }
+          },
+          "500": {
+            "description": "Error interno del servidor",
+            "schema": { "type": "object", "properties": { "error": { "type": "string", "example": "Error al procesar la solicitud" } } }
+          }
+        }
+      }
+    },
+    "/refresh": {
+      "post": {
+        "summary": "Refrescar token JWT",
+        "description": "Genera un nuevo token JWT usando el refresh token",
+        "tags": ["auth"],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "refreshReq",
+            "description": "Token de refresco",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "required": ["refreshToken"],
+              "properties": {
+                "refreshToken": { "type": "string", "example": "dGhpcy1pcy1hLXJlZnJlc2gtdG9rZW4..." }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Token renovado correctamente",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "token": { "type": "string", "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." },
+                "refreshToken": { "type": "string", "example": "dGhpcy1pcy1hLXJlZnJlc2gtdG9rZW4..." }
+              }
+            }
+          },
+          "400": {
+            "description": "Refresh token inválido o expirado",
+            "schema": { "type": "object", "properties": { "error": { "type": "string", "example": "Refresh token inválido o expirado" } } }
+          },
+          "500": {
+            "description": "Error interno del servidor",
+            "schema": { "type": "object", "properties": { "error": { "type": "string", "example": "Error al procesar la solicitud" } } }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Planificacion desarrollo por etapas.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> or <div class="page"></div> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+
+<div style="font-family:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background:linear-gradient(180deg, #FAF7F5 0%, #F3ECE7 100%); color:#1F2421; line-height:1.65; padding:32px; border-radius:24px; max-width:1160px; margin:0 auto; box-shadow:0 20px 60px rgba(0,0,0,0.08); border:1px solid #E5DCD3;">
+<div style="background:linear-gradient(135deg, #16191D 0%, #242B33 52%, #3D3022 100%); color:#FFFFFF; padding:42px 46px; border-radius:20px; border-bottom:5px solid #C5A059; margin-bottom:36px; box-shadow:0 20px 40px rgba(18,21,23,0.25);">
+<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px;">
+<span style="display:inline-block; background:linear-gradient(90deg, rgba(197,160,89,0.32) 0%, rgba(197,160,89,0.12) 100%); color:#F7DF9C; border:1px solid #C5A059; font-size:12px; font-weight:800; letter-spacing:1.4px; text-transform:uppercase; padding:6px 16px; border-radius:999px;">📋 Planificación de Desarrollo y Pantallas</span>
+<span style="display:inline-block; background:rgba(255,255,255,0.1); color:#E2E8F0; font-size:12px; font-weight:600; padding:6px 14px; border-radius:999px; border:1px solid rgba(255,255,255,0.15);">Documento de Referencia Funcional · Octubre 2026</span>
+</div>
+<h1 style="font-size:34px; font-weight:800; margin:0 0 12px 0; color:#FFFFFF; letter-spacing:-0.7px; line-height:1.18; border:none; padding:0;">Plan de Desarrollo por Etapas — App Dra. Natalia Alfonso</h1>
+<p style="font-size:16.5px; color:#D5CFC7; margin:0 0 28px 0; max-width:920px; font-weight:400;">Desglose claro de las <strong style="color:#F7DF9C;">pantallas, funciones especifica y horas estimadas de desarrollo</strong> que construirá nuestro equipo de desarrollo, organizado en <strong style="color:#F7DF9C;">3 etapas progresivas</strong> para poner en marcha la aplicacion.</p>
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:14px;">
+<div style="background:linear-gradient(145deg, rgba(197,160,89,0.24), rgba(197,160,89,0.06)); border:1px solid rgba(197,160,89,0.5); padding:18px; border-radius:14px; text-align:center;">
+<div style="font-size:28px; font-weight:800; color:#F7DF9C; line-height:1.1;">265 a 320 hs</div>
+<div style="font-size:12px; color:#EAE3DC; font-weight:600; text-transform:uppercase; letter-spacing:0.6px; margin-top:6px;">Horas Estimadas Totales de Desarrollo</div>
+</div>
+<div style="background:linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.03)); border:1px solid rgba(255,255,255,0.14); padding:18px; border-radius:14px; text-align:center;">
+<div style="font-size:28px; font-weight:800; color:#FFFFFF; line-height:1.1;">3 Etapas</div>
+<div style="font-size:12px; color:#CBD5E0; font-weight:600; text-transform:uppercase; letter-spacing:0.6px; margin-top:6px;">Planificadas</div>
+</div>
+<div style="background:linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.03)); border:1px solid rgba(255,255,255,0.14); padding:18px; border-radius:14px; text-align:center;">
+<div style="font-size:28px; font-weight:800; color:#68D391; line-height:1.1;">8 a 10 Sem.</div>
+<div style="font-size:12px; color:#CBD5E0; font-weight:600; text-transform:uppercase; letter-spacing:0.6px; margin-top:6px;">Duración Total Estimada</div>
+</div>
+<div style="background:linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.03)); border:1px solid rgba(255,255,255,0.14); padding:18px; border-radius:14px; text-align:center;">
+<div style="font-size:28px; font-weight:800; color:#90CDF4; line-height:1.1;">2 Componentes</div>
+<div style="font-size:12px; color:#CBD5E0; font-weight:600; text-transform:uppercase; letter-spacing:0.6px; margin-top:6px;">Vista Consultorio y Vista Paciente</div>
+</div>
+</div>
+</div>
+<div style="margin-bottom:40px;">
+<div style="display:flex; align-items:center; gap:14px; border-bottom:2px solid #E2D7CE; padding-bottom:14px; margin-bottom:22px;">
+<span style="background:linear-gradient(135deg, #C5A059 0%, #9E7B36 100%); color:#FFFFFF; font-weight:800; font-size:16px; width:38px; height:38px; border-radius:10px; display:inline-flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(197,160,89,0.35);">01</span>
+<div>
+<h2 style="font-size:23px; font-weight:800; color:#1F2421; margin:0; padding:0; border:none; letter-spacing:-0.4px;">Objetivo general</h2>
+<div style="font-size:13px; color:#687076; font-weight:500;">Panorama general y esperado del desarrollo de la app</div>
+</div>
+</div>
+<div style="background:linear-gradient(135deg, #FFFDFB 0%, #F7EFEA 100%); border:1px solid #E2C999; border-left:6px solid #C5A059; padding:22px 26px; border-radius:16px; margin-bottom:22px; box-shadow:0 8px 24px rgba(197,160,89,0.08);">
+<p style="margin:0; font-size:15px; color:#2D332F;">Nuestro equipo de programación se encargará de construir el funcionamiento completo de una <strong>Aplicación Instalable</strong> que conecta en vivo a <strong>Natalia, las nutricionistas y recepción</strong> con sus <strong>pacientes</strong>. Todo lo que Natalia anote desde su computadora Mac aparece al instante en su iPhone o iPad, y todo lo que la paciente cargue desde su celular (como su peso de la semana) se refleja al segundo en la pantalla del consultorio antes de la cita. <em>Nota: La parte de cobros, pagos y contabilidad debemos definir si migrarlo o no, o unicamente migrar la informacion de los pacientes desde el sistema previo.</em></p>
+</div>
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:18px;">
+<div class="web-card" style="background:#FFFFFF; border:1px solid #E6DDD6; border-top:4px solid #C5A059; border-radius:16px; padding:22px; box-shadow:0 6px 18px rgba(0,0,0,0.04);">
+<div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+<span style="font-size:24px; background:#F5ECD7; width:42px; height:42px; border-radius:10px; display:inline-flex; align-items:center; justify-content:center;">💻</span>
+<h3 style="font-size:17px; font-weight:800; color:#1F2421; margin:0; border:none;">1. Vista de las profesionales (Natalia, Nutrición y Recepción)</h3>
+</div>
+<p style="font-size:13.5px; color:#5A626A; margin:0;">Se adapta automáticamente a la pantalla grande de la <strong>Mac</strong>, al tamaño intermedio del <strong>iPad</strong> y al <strong>iPhone</strong> de Natalia. Permite dar de alta pacientes, asignarles su próximo turno, subir los videos cortos explicativos, ver gráficos de progreso, anotar suplementos/tratamientos, subir estudios en PDF y chatear con las pacientes.</p>
+</div>
+<div class="web-card" style="background:#FFFFFF; border:1px solid #E6DDD6; border-top:4px solid #3182CE; border-radius:16px; padding:22px; box-shadow:0 6px 18px rgba(0,0,0,0.04);">
+<div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+<span style="font-size:24px; background:#EBF8FF; width:42px; height:42px; border-radius:10px; display:inline-flex; align-items:center; justify-content:center;">📱</span>
+<h3 style="font-size:17px; font-weight:800; color:#1F2421; margin:0; border:none;">2. Vista del paciente (App en su Celular)</h3>
+</div>
+<p style="font-size:13.5px; color:#5A626A; margin:0;">La paciente se instala el ícono en su teléfono (iPhone o Android). Al entrar ve cuándo es su próxima cita junto con un <strong>video corto de 5 a 15 segundos de Natalia</strong> explicándole qué se va a hacer. Además, carga su peso o medidas semana a semana, ve su curva de avance, descarga sus estudios o planes en PDF y recibe avisos del consultorio.</p>
+</div>
+</div>
+</div>
+<div style="margin-bottom:44px;">
+<div style="display:flex; align-items:center; gap:14px; border-bottom:2px solid #E2D7CE; padding-bottom:14px; margin-bottom:24px;">
+<span style="background:linear-gradient(135deg, #C5A059 0%, #9E7B36 100%); color:#FFFFFF; font-weight:800; font-size:16px; width:38px; height:38px; border-radius:10px; display:inline-flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(197,160,89,0.35);">02</span>
+<div>
+<h2 style="font-size:23px; font-weight:800; color:#1F2421; margin:0; padding:0; border:none; letter-spacing:-0.4px;">Planificacion y desarrollo de etapas (Pantallas y Horas por Bloque)</h2>
+<div style="font-size:13px; color:#687076; font-weight:500;">Detalle puntual de qué pantallas se programan en cada fase y cuántas horas demanda cada una</div>
+</div>
+</div>
+<div style="background:#FFFFFF; border:1px solid #E6DDD6; border-radius:16px; padding:18px 22px; margin-bottom:28px; box-shadow:0 4px 12px rgba(0,0,0,0.02);">
+<div style="font-size:12px; font-weight:800; color:#5A626A; text-transform:uppercase; letter-spacing:0.8px; margin-bottom:10px;">estimacion de Tiempos y Horas a lo largo de las 3 Etapas (Total: 265 a 320 hs)</div>
+<div style="display:grid; grid-template-columns:4fr 3.5fr 2.5fr; gap:8px;">
+<div style="background:linear-gradient(90deg, #2B6CB0, #3182CE); color:#FFFFFF; padding:12px 14px; border-radius:10px; font-size:12px; font-weight:700;">
+<div>ETAPA 1 · Lanzamiento Inicial</div>
+<div style="font-size:11px; opacity:0.92; font-weight:500;">3 a 4 semanas · 110 a 130 horas</div>
+</div>
+<div style="background:linear-gradient(90deg, #6B46C1, #805AD5); color:#FFFFFF; padding:12px 14px; border-radius:10px; font-size:12px; font-weight:700;">
+<div>ETAPA 2 · Seguimiento en Vivo</div>
+<div style="font-size:11px; opacity:0.92; font-weight:500;">3 semanas · 90 a 110 horas</div>
+</div>
+<div style="background:linear-gradient(90deg, #2F855A, #38A169); color:#FFFFFF; padding:12px 14px; border-radius:10px; font-size:12px; font-weight:700;">
+<div>ETAPA 3 · Chat y Mensajes Rápidos</div>
+<div style="font-size:11px; opacity:0.92; font-weight:500;">2 a 3 semanas · 65 a 80 horas</div>
+</div>
+</div>
+</div>
+<div class="web-card" style="background:#FFFFFF; border:1px solid #BEE3F8; border-radius:20px; margin-bottom:30px; overflow:hidden; box-shadow:0 12px 30px rgba(43,108,176,0.07);">
+<div style="background:linear-gradient(135deg, #1A365D 0%, #2B6CB0 100%); color:#FFFFFF; padding:24px 28px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:14px;">
+<div>
+<span style="background:rgba(255,255,255,0.2); color:#EBF8FF; font-size:11px; font-weight:800; padding:4px 12px; border-radius:999px; text-transform:uppercase; letter-spacing:1px;">ETAPA 1 · PRIMERA ENTREGA FUNCIONAL (MVP)</span>
+<h3 style="font-size:22px; font-weight:800; color:#FFFFFF; margin:8px 0 4px 0; border:none;">🚀 Pantallas de Inicio, Alta de Pacientes, Próxima Cita y Videos Cortos</h3>
+<div style="font-size:13.5px; color:#BEE3F8;">Dejamos funcionando la base de la app para que el consultorio agende sesiones y la paciente vea su cita y su video</div>
+</div>
+<div style="display:flex; gap:8px; flex-wrap:wrap;">
+<span style="background:#F7DF9C; color:#1A202C; font-size:13px; font-weight:800; padding:7px 16px; border-radius:999px;">⏱️ 110 a 130 Horas de desarrollo</span>
+<span style="background:#FFFFFF; color:#1A365D; font-size:13px; font-weight:800; padding:7px 16px; border-radius:999px;">🗓️ 3 a 4 semanas estimadas</span>
+</div>
+</div>
+<div style="padding:26px 28px;">
+<div style="font-size:14px; font-weight:800; color:#1A365D; text-transform:uppercase; letter-spacing:0.6px; margin-bottom:14px;">Pantallas, elementos y vistas esperadas</div>
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(310px, 1fr)); gap:16px;">
+<div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:14px; padding:18px;">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+<span style="font-size:15px; font-weight:800; color:#1A365D;">1. Pantalla de Bienvenida y Login</span>
+<span style="background:#EBF8FF; color:#2B6CB0; font-size:11px; font-weight:800; padding:3px 10px; border-radius:999px;">20 - 25 hs</span>
+</div>
+<p style="margin:0; font-size:13.5px; color:#4A5568;">Pantalla inicial donde cada usuario ingresa con su correo y contraseña. El sistema distingue automáticamente si quien entra es <strong>Natalia, una Nutricionista, Secretaría o una Paciente</strong>, enviándola a su pantalla correspondiente. Incluye la función para instalar el ícono de la app en el celular y en la Mac.</p>
+</div>
+<div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:14px; padding:18px;">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+<span style="font-size:15px; font-weight:800; color:#1A365D;">2. Pantalla Principal del Consultorio</span>
+<span style="background:#EBF8FF; color:#2B6CB0; font-size:11px; font-weight:800; padding:3px 10px; border-radius:999px;">25 - 30 hs</span>
+</div>
+<p style="margin:0; font-size:13.5px; color:#4A5568;">Es la pantalla de inicio que ven Natalia y su equipo al abrir la aplicación. Muestra un resumen rápido en vivo: <strong>cantidad total de pacientes activos, listado de los turnos del día de hoy y qué pacientes están pendientes de atención</strong>, adaptándose al ancho de la Mac, el iPad o el iPhone.</p>
+</div>
+<div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:14px; padding:18px;">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+<span style="font-size:15px; font-weight:800; color:#1A365D;">3. Listado, Buscador y Alta de Pacientes</span>
+<span style="background:#EBF8FF; color:#2B6CB0; font-size:11px; font-weight:800; padding:3px 10px; border-radius:999px;">25 - 30 hs</span>
+</div>
+<p style="margin:0; font-size:13.5px; color:#4A5568;">Pantalla con un buscador rápido para encontrar a cualquier paciente escribiendo su <strong>nombre, apellido o DNI</strong>. Incluye el formulario para registrar una paciente nueva (nombre, teléfono, fecha de nacimiento y si se atiende en cirugía, estética o nutrición) y su ficha personal base.</p>
+</div>
+<div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:14px; padding:18px;">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+<span style="font-size:15px; font-weight:800; color:#1A365D;">4. Agenda de Turnos y Biblioteca de Videos</span>
+<span style="background:#EBF8FF; color:#2B6CB0; font-size:11px; font-weight:800; padding:3px 10px; border-radius:999px;">20 - 25 hs</span>
+</div>
+<p style="margin:0; font-size:13.5px; color:#4A5568;">Pantalla para que recepción o Natalia le asignen a la paciente la <strong>fecha, hora y tratamiento de su próxima sesión</strong>. Incluye una biblioteca donde se cargan por única vez los videos cortos de Natalia (de 5 a 15 seg) para que se vinculen solos al elegir el tratamiento.</p>
+</div>
+<div style="background:#FFFDF9; border:1px solid #E2C999; border-radius:14px; padding:18px; grid-column:1 / -1;">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+<span style="font-size:15px; font-weight:800; color:#7D5D23;">5. Pantalla Principal de la Paciente: "Mi Próxima Cita" + Reproductor de Video Corto (5 a 15s)</span>
+<span style="background:#F5ECD7; color:#7D5D23; font-size:11px; font-weight:800; padding:3px 10px; border-radius:999px;">20 hs</span>
+</div>
+<p style="margin:0; font-size:13.5px; color:#2D3748;">Es la primera pantalla que ve la paciente cuando abre la app en su celular: le muestra de forma súper clara <strong>qué día y a qué hora tiene su próxima sesión, con qué profesional y de qué tratamiento se trata</strong>. Justo ahí mismo tiene el reproductor para ver el video de 5 a 15 segundos donde Natalia le explica el procedimiento con palabras simples para sacarle el miedo o la ansiedad.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="web-card" style="background:#FFFFFF; border:1px solid #D6BCFA; border-radius:20px; margin-bottom:30px; overflow:hidden; box-shadow:0 12px 30px rgba(107,70,193,0.07);">
+<div style="background:linear-gradient(135deg, #322659 0%, #6B46C1 100%); color:#FFFFFF; padding:24px 28px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:14px;">
+<div>
+<span style="background:rgba(255,255,255,0.2); color:#FAF5FF; font-size:11px; font-weight:800; padding:4px 12px; border-radius:999px; text-transform:uppercase; letter-spacing:1px;">ETAPA 2 · SEGUNDA ENTREGA FUNCIONAL</span>
+<h3 style="font-size:22px; font-weight:800; color:#FFFFFF; margin:8px 0 4px 0; border:none;">📈 Carga Semanal del Paciente, Gráficos en Vivo, Suplementos y Estudios PDF</h3>
+<div style="font-size:13.5px; color:#E9D8FD;">Desarrollamos el seguimiento interactivo para que la paciente anote sus controles desde casa y Natalia vea el avance antes de la cita</div>
+</div>
+<div style="display:flex; gap:8px; flex-wrap:wrap;">
+<span style="background:#F7DF9C; color:#1A202C; font-size:13px; font-weight:800; padding:7px 16px; border-radius:999px;">⏱️ 90 a 110 horas de desarrollo</span>
+<span style="background:#FFFFFF; color:#322659; font-size:13px; font-weight:800; padding:7px 16px; border-radius:999px;">🗓️ 3 Semanas</span>
+</div>
+</div>
+<div style="padding:26px 28px;">
+<div style="font-size:14px; font-weight:800; color:#44337A; text-transform:uppercase; letter-spacing:0.6px; margin-bottom:14px;">Pantallas, elementos y vistas esperados</div>
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(310px, 1fr)); gap:16px;">
+<div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:14px; padding:18px;">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+<span style="font-size:15px; font-weight:800; color:#44337A;">1. Pantalla del Paciente: "Cargar mi Avance"</span>
+<span style="background:#FAF5FF; color:#6B46C1; font-size:11px; font-weight:800; padding:3px 10px; border-radius:999px;">20 - 25 hs</span>
+</div>
+<p style="margin:0; font-size:13.5px; color:#4A5568;">Pantalla muy sencilla en el celular de la paciente con casilleros para anotar sus controles semana a semana desde su casa: <strong>peso actual, saturación de oxígeno en sangre, medidas corporales</strong> u otros valores pedidos por el consultorio, guardando la fecha y los datos.</p>
+</div>
+<div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:14px; padding:18px;">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+<span style="font-size:15px; font-weight:800; color:#44337A;">2. Pantalla de Gráficos de Evolución</span>
+<span style="background:#FAF5FF; color:#6B46C1; font-size:11px; font-weight:800; padding:3px 10px; border-radius:999px;">25 - 30 hs</span>
+</div>
+<p style="margin:0; font-size:13.5px; color:#4A5568;">Convierte los datos que anota la paciente en <strong>gráficos de líneas con info. visual</strong>. La paciente tiene su sección <em>"Mi Evolución"</em> para motivarse viendo su avance, y Natalia o las nutricionistas ven la curva completa dentro de la ficha antes de atenderla.</p>
+</div>
+<div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:14px; padding:18px;">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+<span style="font-size:15px; font-weight:800; color:#44337A;">3. Panel de Avisos de Actividad Reciente</span>
+<span style="background:#FAF5FF; color:#6B46C1; font-size:11px; font-weight:800; padding:3px 10px; border-radius:999px;">15 - 20 hs</span>
+</div>
+<p style="margin:0; font-size:13.5px; color:#4A5568;">Sección dentro del panel de Natalia y Nutrición que muestra un listado de <strong>qué pacientes actualizaron su peso, saturación o datos durante el día o la semana</strong>, permitiendo entrar directo a ver sus cambios y avances con un clic.</p>
+</div>
+<div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:14px; padding:18px;">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+<span style="font-size:15px; font-weight:800; color:#44337A;">4. Pantalla de Tratamientos y Suplementos</span>
+<span style="background:#FAF5FF; color:#6B46C1; font-size:11px; font-weight:800; padding:3px 10px; border-radius:999px;">15 - 20 hs</span>
+</div>
+<p style="margin:0; font-size:13.5px; color:#4A5568;">Pantalla donde la médica o nutricionista carga los esquemas indicados a la paciente (<strong>suplementos, vitaminas, medicación, dosis, cantidad de días e instrucciones pre/post cirugía</strong>) marcándolos como <em>Activos</em> o <em>Completados</em>. La paciente los lee desde su celular.</p>
+</div>
+<div style="background:#FFFDF9; border:1px solid #E2C999; border-radius:14px; padding:18px; grid-column:1 / -1;">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+<span style="font-size:15px; font-weight:800; color:#7D5D23;">5. Sección de Estudios Médicos y Planes Nutricionales en PDF (Subida y Descarga)</span>
+<span style="background:#F5ECD7; color:#7D5D23; font-size:11px; font-weight:800; padding:3px 10px; border-radius:999px;">15 hs</span>
+</div>
+<p style="margin:0; font-size:13.5px; color:#2D3748;">Espacio dentro de la ficha clínica y del celular de la paciente para <strong>guardar, consultar y descargar archivos en PDF</strong> (Entrega de resultados, análisis clínicos, indicaciones operatorias o planes de alimentación) todo ordenado en un solo lugar.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="web-card" style="background:#FFFFFF; border:1px solid #9AE6B4; border-radius:20px; margin-bottom:28px; overflow:hidden; box-shadow:0 12px 30px rgba(47,133,90,0.07);">
+<div style="background:linear-gradient(135deg, #1C4532 0%, #2F855A 100%); color:#FFFFFF; padding:24px 28px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:14px;">
+<div>
+<span style="background:rgba(255,255,255,0.2); color:#F0FFF4; font-size:11px; font-weight:800; padding:4px 12px; border-radius:999px; text-transform:uppercase; letter-spacing:1px;">ETAPA 3 · ENTREGA FINAL</span>
+<h3 style="font-size:22px; font-weight:800; color:#FFFFFF; margin:8px 0 4px 0; border:none;">💬 Chat Interno con Pacientes, Botonera de Mensajes Rápidos y Avisos</h3>
+<div style="font-size:13.5px; color:#C6F6D5;">Sumamos el canal de comunicación propio dentro de la app para descomprimir el WhatsApp del consultorio</div>
+</div>
+<div style="display:flex; gap:8px; flex-wrap:wrap;">
+<span style="background:#F7DF9C; color:#1A202C; font-size:13px; font-weight:800; padding:7px 16px; border-radius:999px;">⏱️ 65 a 80 Horas de Código</span>
+<span style="background:#FFFFFF; color:#1C4532; font-size:13px; font-weight:800; padding:7px 16px; border-radius:999px;">🗓️ 2 a 3 Semanas</span>
+</div>
+</div>
+<div style="padding:26px 28px;">
+<div style="font-size:14px; font-weight:800; color:#22543D; text-transform:uppercase; letter-spacing:0.6px; margin-bottom:14px;">Pantallas, elementos y vistas esperadas</div>
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
+<div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:14px; padding:18px;">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+<span style="font-size:15px; font-weight:800; color:#22543D;">1. Pantalla de Chat Individual</span>
+<span style="background:#F0FFF4; color:#2F855A; font-size:11px; font-weight:800; padding:3px 10px; border-radius:999px;">30 - 35 hs</span>
+</div>
+<p style="margin:0; font-size:13.5px; color:#4A5568;">Ventana de conversación privada uno a uno entre el consultorio (Natalia o Nutrición) y cada paciente registrada, para que todas las dudas y respuestas queden guardadas dentro del chat.</p>
+</div>
+<div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:14px; padding:18px;">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+<span style="font-size:15px; font-weight:800; color:#22543D;">2. Botonera de Mensajes Rápidos</span>
+<span style="background:#F0FFF4; color:#2F855A; font-size:11px; font-weight:800; padding:3px 10px; border-radius:999px;">15 - 20 hs</span>
+</div>
+<p style="margin:0; font-size:13.5px; color:#4A5568;">Fila de botones debajo del chat del consultorio para mandar avisos habituales tocando un solo botón (ej.: <em>"Recordá asistir en ayunas"</em>, <em>"Tus estudios ya están subidos"</em>, <em>"Recordá anotar tu peso de esta semana"</em>) a modo de plantillas de mensajes para agilizar el proceso.</p>
+</div>
+<div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:14px; padding:18px;">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+<span style="font-size:15px; font-weight:800; color:#22543D;">3. Avisos de Turnos y Novedades</span>
+<span style="background:#F0FFF4; color:#2F855A; font-size:11px; font-weight:800; padding:3px 10px; border-radius:999px;">20 - 25 hs</span>
+</div>
+<p style="margin:0; font-size:13.5px; color:#4A5568;">Módulo para enviar recordatorios de citas o novedades de tratamientos al celular de las pacientes, más el ajuste y prueba general en Mac, iPad y celulares/dispositivos Android.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="margin-bottom:44px;">
+<div style="display:flex; align-items:center; gap:14px; border-bottom:2px solid #E2D7CE; padding-bottom:14px; margin-bottom:24px;">
+<span style="background:linear-gradient(135deg, #C5A059 0%, #9E7B36 100%); color:#FFFFFF; font-weight:800; font-size:16px; width:38px; height:38px; border-radius:10px; display:inline-flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(197,160,89,0.35);">03</span>
+<div>
+<h2 style="font-size:23px; font-weight:800; color:#1F2421; margin:0; padding:0; border:none; letter-spacing:-0.4px;">Mapa Completo de Pantallas que Tendrá la Aplicación</h2>
+<div style="font-size:13px; color:#687076; font-weight:500;">Listado claro de todas las vistas que existirán del lado de la paciente y del lado del consultorio</div>
+</div>
+</div>
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr)); gap:22px;">
+<div class="web-card" style="background:#FFFFFF; border:1px solid #BEE3F8; border-top:5px solid #2B6CB0; border-radius:18px; padding:24px; box-shadow:0 8px 20px rgba(0,0,0,0.04);">
+<div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
+<h3 style="font-size:18px; font-weight:800; color:#1A365D; margin:0; border:none;">📱 Pantallas del Celular de la Paciente</h3>
+<span style="background:#EBF8FF; color:#2B6CB0; font-size:11px; font-weight:800; padding:4px 10px; border-radius:999px;">6 VISTAS PRINCIPALES</span>
+</div>
+<div style="display:flex; flex-direction:column; gap:10px; font-size:13.5px; color:#2D3748;">
+<div style="background:#F8FAFC; padding:11px 14px; border-radius:10px; border-left:4px solid #3182CE;"><strong>1. Pantalla de Ingreso (Login):</strong> Acceso con correo y clave + botón de instalación en el teléfono. <span style="color:#2B6CB0; font-weight:700;">(Etapa 1)</span></div>
+<div style="background:#F8FAFC; padding:11px 14px; border-radius:10px; border-left:4px solid #3182CE;"><strong>2. Inicio "Mi Próxima Cita" + Video:</strong> Día y hora del próximo turno + reproductor del video corto (5 a 15s) de Natalia. <span style="color:#2B6CB0; font-weight:700;">(Etapa 1)</span></div>
+<div style="background:#F8FAFC; padding:11px 14px; border-radius:10px; border-left:4px solid #805AD5;"><strong>3. Cargar mi Peso / Controles Semanales:</strong> Casilleros simples para anotar peso, saturación o medidas desde casa. <span style="color:#6B46C1; font-weight:700;">(Etapa 2)</span></div>
+<div style="background:#F8FAFC; padding:11px 14px; border-radius:10px; border-left:4px solid #805AD5;"><strong>4. Pantalla "Mi Evolución":</strong> Gráfico simple donde la paciente ve cómo va mejorando semana a semana. <span style="color:#6B46C1; font-weight:700;">(Etapa 2)</span></div>
+<div style="background:#F8FAFC; padding:11px 14px; border-radius:10px; border-left:4px solid #805AD5;"><strong>5. Mis Suplementos, Indicaciones y PDFs:</strong> Lectura de sus tratamientos activos y botón para bajar estudios o planes en PDF. <span style="color:#6B46C1; font-weight:700;">(Etapa 2)</span></div>
+<div style="background:#F8FAFC; padding:11px 14px; border-radius:10px; border-left:4px solid #2F855A;"><strong>6. Chat con el Consultorio y Avisos:</strong> Mensajería directa con Natalia/Nutrición y bandeja de recordatorios. <span style="color:#2F855A; font-weight:700;">(Etapa 3)</span></div>
+</div>
+</div>
+<div class="web-card" style="background:#FFFFFF; border:1px solid #E2C999; border-top:5px solid #C5A059; border-radius:18px; padding:24px; box-shadow:0 8px 20px rgba(0,0,0,0.04);">
+<div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
+<h3 style="font-size:18px; font-weight:800; color:#7D5D23; margin:0; border:none;">💻 Pantallas del Consultorio (Mac / iPad / iPhone)</h3>
+<span style="background:#F5ECD7; color:#7D5D23; font-size:11px; font-weight:800; padding:4px 10px; border-radius:999px;">6 VISTAS PRINCIPALES</span>
+</div>
+<div style="display:flex; flex-direction:column; gap:10px; font-size:13.5px; color:#2D3748;">
+<div style="background:#FAF8F5; padding:11px 14px; border-radius:10px; border-left:4px solid #C5A059;"><strong>1. Login Diferenciado del Equipo:</strong> Entrada para Natalia (Cirugía), Nutricionistas y Personal Administrativo. <span style="color:#2B6CB0; font-weight:700;">(Etapa 1)</span></div>
+<div style="background:#FAF8F5; padding:11px 14px; border-radius:10px; border-left:4px solid #C5A059;"><strong>2. Panel Principal (Resumen del Día):</strong> Total de pacientes, turnos del día, pendientes y avisos de quién actualizó su peso hoy. <span style="color:#2B6CB0; font-weight:700;">(Etapa 1 y 2)</span></div>
+<div style="background:#FAF8F5; padding:11px 14px; border-radius:10px; border-left:4px solid #C5A059;"><strong>3. Padrón, Buscador y Alta de Paciente:</strong> Lista de pacientes con búsqueda por nombre o DNI y formulario de registro. <span style="color:#2B6CB0; font-weight:700;">(Etapa 1)</span></div>
+<div style="background:#FAF8F5; padding:11px 14px; border-radius:10px; border-left:4px solid #C5A059;"><strong>4. Asignador de Próxima Cita + Biblioteca de Videos:</strong> Pantalla para agendar sesión y subir los videos cortos (5-15s) de cada tratamiento. <span style="color:#2B6CB0; font-weight:700;">(Etapa 1)</span></div>
+<div style="background:#FAF8F5; padding:11px 14px; border-radius:10px; border-left:4px solid #805AD5;"><strong>5. Ficha Clínica Completa de la Paciente:</strong> Gráficos de evolución en vivo, carga de suplementos/tratamientos y subida de archivos PDF. <span style="color:#6B46C1; font-weight:700;">(Etapa 2)</span></div>
+<div style="background:#FAF8F5; padding:11px 14px; border-radius:10px; border-left:4px solid #2F855A;"><strong>6. Panel de Chat + Botonera de Mensajes Rápidos:</strong> Conversación con cada paciente y botones de envío en 1 clic. <span style="color:#2F855A; font-weight:700;">(Etapa 3)</span></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div style="display:flex; align-items:center; gap:14px; border-bottom:2px solid #E2D7CE; padding-bottom:14px; margin-bottom:24px;">
+<span style="background:linear-gradient(135deg, #C5A059 0%, #9E7B36 100%); color:#FFFFFF; font-weight:800; font-size:16px; width:38px; height:38px; border-radius:10px; display:inline-flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(197,160,89,0.35);">04</span>
+<div>
+<h2 style="font-size:23px; font-weight:800; color:#1F2421; margin:0; padding:0; border:none; letter-spacing:-0.4px;">Resumen de tiempo y desarrollo de la app</h2>
+<div style="font-size:13px; color:#687076; font-weight:500;">Síntesis final de la planificacion y desarrollo de nuestro equipo etapa por etapa</div>
+</div>
+</div>
+<div style="border-radius:16px; overflow:hidden; border:1px solid #D8CFC7; box-shadow:0 8px 24px rgba(0,0,0,0.04);">
+<table style="width:100%; border-collapse:collapse; background:#FFFFFF; font-size:13.5px;">
+<thead>
+<tr style="background:linear-gradient(90deg, #1F2421 0%, #2D332F 100%); color:#FFFFFF; text-align:left;">
+<th style="padding:15px 18px; color:#F7DF9C; font-size:12px; text-transform:uppercase; letter-spacing:0.6px;">Etapa</th>
+<th style="padding:15px 18px; color:#F7DF9C; font-size:12px; text-transform:uppercase; letter-spacing:0.6px;">Enfoque de la Etapa</th>
+<th style="padding:15px 18px; color:#F7DF9C; font-size:12px; text-transform:uppercase; letter-spacing:0.6px;">Pantallas y Funciones Incluidas</th>
+<th style="padding:15px 18px; color:#F7DF9C; font-size:12px; text-transform:uppercase; letter-spacing:0.6px;">Tiempo Estimado</th>
+<th style="padding:15px 18px; color:#F7DF9C; font-size:12px; text-transform:uppercase; letter-spacing:0.6px;">Horas de Código</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom:1px solid #EBE3DC;">
+<td style="padding:14px 18px;"><span style="background:#EBF8FF; color:#2B6CB0; border:1px solid #90CDF4; font-weight:800; font-size:11px; padding:4px 10px; border-radius:999px;">Etapa 1 (MVP)</span></td>
+<td style="padding:14px 18px; font-weight:700;">Base, Agenda y Videos Cortos</td>
+<td style="padding:14px 18px; color:#4A5568;">Login, Pantalla inicial del consultorio, Alta y buscador de pacientes, Agenda de turnos, Biblioteca de videos (5-15s) y Pantalla del paciente "Mi Próxima Cita".</td>
+<td style="padding:14px 18px; font-weight:700;">3 a 4 semanas</td>
+<td style="padding:14px 18px; font-weight:800; color:#2B6CB0;">110 a 130 hs</td>
+</tr>
+<tr style="border-bottom:1px solid #EBE3DC; background:#FAF8F6;">
+<td style="padding:14px 18px;"><span style="background:#FAF5FF; color:#6B46C1; border:1px solid #D6BCFA; font-weight:800; font-size:11px; padding:4px 10px; border-radius:999px;">Etapa 2</span></td>
+<td style="padding:14px 18px; font-weight:700;">Seguimiento Semanal, Gráficos y PDFs</td>
+<td style="padding:14px 18px; color:#4A5568;">Pantalla del paciente para cargar peso/saturación/medidas, Gráficos de evolución en vivo, Avisos de actividad reciente, Carga de suplementos/tratamientos y Estudios en PDF.</td>
+<td style="padding:14px 18px; font-weight:700;">3 semanas</td>
+<td style="padding:14px 18px; font-weight:800; color:#6B46C1;">90 a 110 hs</td>
+</tr>
+<tr style="border-bottom:1px solid #EBE3DC;">
+<td style="padding:14px 18px;"><span style="background:#F0FFF4; color:#2F855A; border:1px solid #9AE6B4; font-weight:800; font-size:11px; padding:4px 10px; border-radius:999px;">Etapa 3</span></td>
+<td style="padding:14px 18px; font-weight:700;">Chat Directo y Mensajes en 1 Clic</td>
+<td style="padding:14px 18px; color:#4A5568;">Chat privado consultorio-paciente, Botonera de mensajes rápidos prearmados (ayunas, estudios listos, recordatorio de peso) y Avisos de turnos/novedades.</td>
+<td style="padding:14px 18px; font-weight:700;">2 a 3 semanas</td>
+<td style="padding:14px 18px; font-weight:800; color:#2F855A;">65 a 80 hs</td>
+</tr>
+<tr style="background:linear-gradient(90deg, #F5ECD7 0%, #FAF0CA 100%); font-weight:800;">
+<td style="padding:16px 18px; color:#7D5D23;">🏆 TOTAL</td>
+<td style="padding:16px 18px; color:#1F2421;">Plataforma Completa Terminada</td>
+<td style="padding:16px 18px; color:#1F2421;">Todas las pantallas funcionando en la Mac, el iPad y el iPhone de Natalia + los celulares de las pacientes</td>
+<td style="padding:16px 18px; color:#7D5D23;">8 a 10 semanas</td>
+<td style="padding:16px 18px; color:#7D5D23; font-size:15px;">265 a 320 hs</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+</body>
+</html>

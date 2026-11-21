@@ -1,0 +1,1734 @@
+{
+ "url": "http://localhost:3000/historia-clinica?embedded=true",
+ "at": "2026-10-20T19:50:59.030Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 1,
+   "filled": [
+    0.63
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 900,
+     "screens": 1,
+     "words": 349,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 20,
+     "sections": 0,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Historial de Sesiones",
+     "words": 3,
+     "chars": 21,
+     "lines": 1,
+     "size": 18,
+     "vw": 1.3,
+     "font": "Plus Jakarta Sans",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.56,
+     "top": 10,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Historial de Sesiones",
+     "words": 3,
+     "lines": 1,
+     "size": 18,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [],
+    "headingSummary": {
+     "count": 0,
+     "maxLines": 0,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      18,
+      20
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 12,
+      "leading": 1.33,
+      "weight": 500,
+      "tracking": 0,
+      "contrast": 15.3
+     },
+     "measureChars": 155,
+     "max": {
+      "size": 20,
+      "vw": 1.4,
+      "font": "Plus Jakarta Sans",
+      "text": "Medi"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 4,
+     "microLabelShare": 0.038,
+     "microSamples": [
+      "Consultorio Digital",
+      "Menú Principal",
+      "Sesiones Registradas (4)",
+      "Antecedentes y Parámetros del Paciente"
+     ],
+     "upperShare": 0.1,
+     "centerShare": 0.06,
+     "smallText": 54
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#faf7f5",
+     "bodyBgHsl": {
+      "h": 24,
+      "s": 0.33,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#faf7f5",
+       "top": 0,
+       "hsl": {
+        "h": 24,
+        "s": 0.33,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 213,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2a2421",
+       "share": 0.68
+      },
+      {
+       "color": "#7d726d",
+       "share": 0.22
+      },
+      {
+       "color": "#c5a059",
+       "share": 0.07
+      },
+      {
+       "color": "#c97a85",
+       "share": 0.01
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#f4ebe6",
+      "hsl": {
+       "h": 21,
+       "s": 0.39,
+       "l": 0.93
+      },
+      "fg": "#2a2421"
+     },
+     "lowContrast": [
+      {
+       "text": "Indicaciones asignadas:",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#c5a059",
+       "bg": "#f4ebe6"
+      },
+      {
+       "text": "Indicaciones asignadas:",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#c5a059",
+       "bg": "#f4ebe6"
+      },
+      {
+       "text": "Indicaciones asignadas:",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#c5a059",
+       "bg": "#f4ebe6"
+      },
+      {
+       "text": "Indicaciones asignadas:",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#c5a059",
+       "bg": "#f4ebe6"
+      },
+      {
+       "text": "Cirujana Plástica y Estética",
+       "ratio": 2.5,
+       "need": 4.5,
+       "size": 10,
+       "fg": "#c5a059",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "2025-05-02",
+       "ratio": 2.5,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#c5a059",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 5,
+     "radius": 12,
+     "height": 30,
+     "withShadow": 1,
+     "withGradient": 1,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Dra. Valeria Montes Ver perfil profesion",
+      "Cerrar sesión",
+      "Notificaciones 3",
+      "Ir al Chat",
+      "Registrar Sesión en Historial"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 4,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "div.luxury-card.p-5 → rgba(197, 160, 89, 0.08) 0px 10px 30px -5px",
+      "button.btn-primary.text-xs → rgba(197, 160, 89, 0.35) 0px 6px 18px -4px",
+      "div.luxury-card.p-5 → rgba(197, 160, 89, 0.08) 0px 10px 30px -5px",
+      "div.luxury-card.p-5 → rgba(197, 160, 89, 0.08) 0px 10px 30px -5px"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 10,
+     "hairlineSamples": [
+      "aside.fixed.inset-y-0 256px",
+      "div.p-5.sm:p-6 255px",
+      "div.p-3.5.border-t 255px",
+      "header.bg-[#FFFFFF].border-b 1184px",
+      "div.flex.items-center 974px"
+     ],
+     "outlinedBoxes": 7,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 7,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 93
+      },
+      {
+       "count": 4,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 283
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 178,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 900,
+    "margins": {
+     "left": 12,
+     "right": 105
+    },
+    "sections": [
+     {
+      "sel": "div.luxury-card.p-5",
+      "tag": "div",
+      "top": 213,
+      "height": 1097,
+      "words": 263,
+      "media": 0,
+      "middle": 13,
+      "heading": {
+       "text": "Sesión 1 • Evaluación Inicial y Planificación",
+       "size": 14,
+       "tag": "h3"
+      },
+      "left": 382,
+      "right": 139,
+      "textLeft": 382,
+      "textRight": 139,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.luxury-card.p-5",
+      "tag": "div",
+      "top": 1334,
+      "height": 268,
+      "words": 38,
+      "media": 0,
+      "middle": 177,
+      "heading": {
+       "text": "Antecedentes y Parámetros del Paciente",
+       "size": 12,
+       "tag": "h2"
+      },
+      "left": 361,
+      "right": 105,
+      "textLeft": 361,
+      "textRight": 120,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Historial de Sesiones",
+      "size": 18,
+      "top": 10,
+      "firstScreen": true
+     },
+     {
+      "text": "Historial de Sesiones",
+      "size": 20,
+      "top": 118,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 382,
+      "n": 4
+     },
+     {
+      "x": 288,
+      "n": 1
+     },
+     {
+      "x": 417,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 6,
+    "bodySize": 12,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.12,
+    "voidBox": {
+     "x": 0,
+     "y": 360,
+     "w": 360,
+     "h": 420
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "dark": false,
+    "ground": "#faf7f5",
+    "sidebar": {
+     "w": 256,
+     "tag": "aside",
+     "links": 7,
+     "share": 0.18
+    },
+    "topbar": {
+     "h": 65
+    },
+    "canvas": {
+     "left": 32,
+     "right": 49
+    },
+    "hero": {
+     "text": "Historial de Sesiones",
+     "words": 3,
+     "chars": 21,
+     "lines": 1,
+     "size": 18,
+     "vw": 1.3,
+     "font": "Plus Jakarta Sans",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.56,
+     "top": 10,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 4,
+     "firstScreen": 3,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 9,
+     "radii": [
+      [
+       16,
+       7
+      ],
+      [
+       0,
+       2
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 3,
+     "softShadows": 0,
+     "shadowSamples": [
+      "rgba(197, 160, 89, 0.08) 0px 10px 30px -5px",
+      "rgba(197, 160, 89, 0.08) 0px 10px 30px -5px",
+      "rgba(197, 160, 89, 0.08) 0px 10px 30px -5px"
+     ],
+     "glass": 0
+    },
+    "chips": {
+     "count": 1,
+     "hues": 1,
+     "samples": [
+      {
+       "hue": 24,
+       "size": 42,
+       "radius": "12px"
+      }
+     ]
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.89,
+     "tiny": 12,
+     "tinySamples": [
+      "Consultorio Digital 10px",
+      "Menú Principal 10px",
+      "Ver perfil profesional 10px",
+      "Cirujana Plástica y Esté 10px"
+     ],
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      18,
+      20
+     ]
+    },
+    "title": {
+     "text": "Historial de Sesiones",
+     "size": 18,
+     "top": 10
+    },
+    "colourShare": 0.01
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 1,
+   "filled": [
+    0.61
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 1024,
+     "screens": 1,
+     "words": 342,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 20,
+     "sections": 0,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Historial de Sesiones",
+     "words": 3,
+     "chars": 21,
+     "lines": 1,
+     "size": 18,
+     "vw": 2.3,
+     "font": "Plus Jakarta Sans",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.56,
+     "top": 10,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Historial de Sesiones",
+     "words": 3,
+     "lines": 1,
+     "size": 18,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [],
+    "headingSummary": {
+     "count": 0,
+     "maxLines": 0,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      18,
+      20
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 12,
+      "leading": 1.33,
+      "weight": 500,
+      "tracking": 0,
+      "contrast": 15.3
+     },
+     "measureChars": 106,
+     "max": {
+      "size": 20,
+      "vw": 2.6,
+      "font": "Plus Jakarta Sans",
+      "text": "Medi"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 4,
+     "microLabelShare": 0.039,
+     "microSamples": [
+      "Consultorio Digital",
+      "Menú Principal",
+      "Sesiones Registradas (4)",
+      "Antecedentes y Parámetros del Paciente"
+     ],
+     "upperShare": 0.1,
+     "centerShare": 0.06,
+     "smallText": 52
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#faf7f5",
+     "bodyBgHsl": {
+      "h": 24,
+      "s": 0.33,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#faf7f5",
+       "top": 0,
+       "hsl": {
+        "h": 24,
+        "s": 0.33,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2a2421",
+       "share": 0.69
+      },
+      {
+       "color": "#7d726d",
+       "share": 0.23
+      },
+      {
+       "color": "#c5a059",
+       "share": 0.06
+      },
+      {
+       "color": "#c97a85",
+       "share": 0.01
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#f4ebe6",
+      "hsl": {
+       "h": 21,
+       "s": 0.39,
+       "l": 0.93
+      },
+      "fg": "#2a2421"
+     },
+     "lowContrast": [
+      {
+       "text": "Indicaciones asignadas:",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#c5a059",
+       "bg": "#f4ebe6"
+      },
+      {
+       "text": "Indicaciones asignadas:",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#c5a059",
+       "bg": "#f4ebe6"
+      },
+      {
+       "text": "Indicaciones asignadas:",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#c5a059",
+       "bg": "#f4ebe6"
+      },
+      {
+       "text": "Indicaciones asignadas:",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#c5a059",
+       "bg": "#f4ebe6"
+      },
+      {
+       "text": "2025-05-02",
+       "ratio": 2.5,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#c5a059",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "2025-05-10",
+       "ratio": 2.5,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#c5a059",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 5,
+     "radius": 12,
+     "height": 30,
+     "withShadow": 1,
+     "withGradient": 1,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Dra. Valeria Montes Ver perfil profesion",
+      "Cerrar sesión",
+      "Notificaciones 3",
+      "Ir al Chat",
+      "Registrar Sesión en Historial"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 4,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "div.luxury-card.p-5 → rgba(197, 160, 89, 0.08) 0px 10px 30px -5px",
+      "button.btn-primary.text-xs → rgba(197, 160, 89, 0.35) 0px 6px 18px -4px",
+      "div.luxury-card.p-5 → rgba(197, 160, 89, 0.08) 0px 10px 30px -5px",
+      "div.luxury-card.p-5 → rgba(197, 160, 89, 0.08) 0px 10px 30px -5px"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 10,
+     "hairlineSamples": [
+      "aside.fixed.inset-y-0 288px",
+      "div.p-5.sm:p-6 287px",
+      "div.p-3.5.border-t 287px",
+      "header.bg-[#FFFFFF].border-b 768px",
+      "div.flex.items-center 678px"
+     ],
+     "outlinedBoxes": 7,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 7,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 313
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": true,
+     "height": 1024,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 1024,
+    "margins": {
+     "left": 45,
+     "right": 45
+    },
+    "sections": [
+     {
+      "sel": "div.luxury-card.p-5",
+      "tag": "div",
+      "top": 85,
+      "height": 134,
+      "words": 20,
+      "media": 0,
+      "middle": 74,
+      "heading": {
+       "text": "Historial de Sesiones",
+       "size": 20,
+       "tag": "h1"
+      },
+      "left": 45,
+      "right": 97,
+      "textLeft": 101,
+      "textRight": 116,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.luxury-card.p-5",
+      "tag": "div",
+      "top": 243,
+      "height": 1239,
+      "words": 263,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Sesión 1 • Evaluación Inicial y Planificación",
+       "size": 14,
+       "tag": "h3"
+      },
+      "left": 66,
+      "right": 79,
+      "textLeft": 66,
+      "textRight": 79,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.luxury-card.p-5",
+      "tag": "div",
+      "top": 1506,
+      "height": 268,
+      "words": 38,
+      "media": 0,
+      "middle": 29,
+      "heading": {
+       "text": "Antecedentes y Parámetros del Paciente",
+       "size": 12,
+       "tag": "h2"
+      },
+      "left": 45,
+      "right": 45,
+      "textLeft": 45,
+      "textRight": 60,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Historial de Sesiones",
+      "size": 18,
+      "top": 10,
+      "firstScreen": true
+     },
+     {
+      "text": "Historial de Sesiones",
+      "size": 20,
+      "top": 121,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 66,
+      "n": 5
+     },
+     {
+      "x": 101,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 6,
+    "bodySize": 12,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "dark": false,
+    "ground": "#faf7f5",
+    "sidebar": {
+     "w": 288,
+     "tag": "aside",
+     "links": 7,
+     "share": 0.38
+    },
+    "topbar": {
+     "h": 65
+    },
+    "canvas": {
+     "left": 9,
+     "right": 36
+    },
+    "hero": {
+     "text": "Historial de Sesiones",
+     "words": 3,
+     "chars": 21,
+     "lines": 1,
+     "size": 18,
+     "vw": 2.3,
+     "font": "Plus Jakarta Sans",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.56,
+     "top": 10,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 4,
+     "firstScreen": 3,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 17,
+     "radii": [
+      [
+       12,
+       8
+      ],
+      [
+       16,
+       7
+      ],
+      [
+       0,
+       2
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 3,
+     "softShadows": 0,
+     "shadowSamples": [
+      "rgba(197, 160, 89, 0.08) 0px 10px 30px -5px",
+      "rgba(197, 160, 89, 0.08) 0px 10px 30px -5px",
+      "rgba(197, 160, 89, 0.08) 0px 10px 30px -5px"
+     ],
+     "glass": 0
+    },
+    "chips": {
+     "count": 1,
+     "hues": 1,
+     "samples": [
+      {
+       "hue": 24,
+       "size": 42,
+       "radius": "12px"
+      }
+     ]
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.89,
+     "tiny": 12,
+     "tinySamples": [
+      "Consultorio Digital 10px",
+      "Menú Principal 10px",
+      "Ver perfil profesional 10px",
+      "Cirujana Plástica y Esté 10px"
+     ],
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      18,
+      20
+     ]
+    },
+    "title": {
+     "text": "Historial de Sesiones",
+     "size": 18,
+     "top": 10
+    },
+    "colourShare": 0.013
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 1,
+   "filled": [
+    0.68
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 844,
+     "screens": 1,
+     "words": 330,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 20,
+     "sections": 0,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Historial de Sesiones",
+     "words": 3,
+     "chars": 21,
+     "lines": 1,
+     "size": 16,
+     "vw": 4.1,
+     "font": "Plus Jakarta Sans",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.5,
+     "top": 16,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Historial de Sesiones",
+     "words": 3,
+     "lines": 1,
+     "size": 16,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [],
+    "headingSummary": {
+     "count": 0,
+     "maxLines": 0,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      10,
+      12,
+      14,
+      16,
+      18
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 12,
+      "leading": 1.33,
+      "weight": 500,
+      "tracking": 0,
+      "contrast": 15.3
+     },
+     "measureChars": 48,
+     "max": {
+      "size": 18,
+      "vw": 4.6,
+      "font": "Plus Jakarta Sans",
+      "text": "Medi"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 4,
+     "microLabelShare": 0.041,
+     "microSamples": [
+      "Consultorio Digital",
+      "Menú Principal",
+      "Sesiones Registradas (4)",
+      "Antecedentes y Parámetros del Paciente"
+     ],
+     "upperShare": 0.1,
+     "centerShare": 0.06,
+     "smallText": 53
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#faf7f5",
+     "bodyBgHsl": {
+      "h": 24,
+      "s": 0.33,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#faf7f5",
+       "top": 0,
+       "hsl": {
+        "h": 24,
+        "s": 0.33,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2a2421",
+       "share": 0.71
+      },
+      {
+       "color": "#7d726d",
+       "share": 0.21
+      },
+      {
+       "color": "#c5a059",
+       "share": 0.06
+      },
+      {
+       "color": "#c97a85",
+       "share": 0.01
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#f4ebe6",
+      "hsl": {
+       "h": 21,
+       "s": 0.39,
+       "l": 0.93
+      },
+      "fg": "#2a2421"
+     },
+     "lowContrast": [
+      {
+       "text": "Indicaciones asignadas:",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#c5a059",
+       "bg": "#f4ebe6"
+      },
+      {
+       "text": "Indicaciones asignadas:",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#c5a059",
+       "bg": "#f4ebe6"
+      },
+      {
+       "text": "Indicaciones asignadas:",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#c5a059",
+       "bg": "#f4ebe6"
+      },
+      {
+       "text": "Indicaciones asignadas:",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#c5a059",
+       "bg": "#f4ebe6"
+      },
+      {
+       "text": "2025-05-02",
+       "ratio": 2.5,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#c5a059",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "2025-05-10",
+       "ratio": 2.5,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#c5a059",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 5,
+     "radius": 12,
+     "height": 59,
+     "withShadow": 1,
+     "withGradient": 1,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Dra. Valeria Montes Ver perfil profesion",
+      "Cerrar sesión",
+      "3",
+      "Ir al Chat",
+      "Registrar Sesión en Historial"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 4,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "div.luxury-card.p-5 → rgba(197, 160, 89, 0.08) 0px 10px 30px -5px",
+      "button.btn-primary.text-xs → rgba(197, 160, 89, 0.35) 0px 6px 18px -4px",
+      "div.luxury-card.p-5 → rgba(197, 160, 89, 0.08) 0px 10px 30px -5px",
+      "div.luxury-card.p-5 → rgba(197, 160, 89, 0.08) 0px 10px 30px -5px"
+     ],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "button.btn-primary.text-xs → linear-gradient(135deg, rgb(212, 175, 55) 0%, rgb(197, 160, 89) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 10,
+     "hairlineSamples": [
+      "aside.fixed.inset-y-0 288px",
+      "div.p-5.sm:p-6 287px",
+      "div.p-3.5.border-t 287px",
+      "header.bg-[#FFFFFF].border-b 390px",
+      "div.flex.items-center 324px"
+     ],
+     "outlinedBoxes": 7,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 7,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 363
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": true,
+     "height": 844,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 844,
+    "margins": {
+     "left": 33,
+     "right": 33
+    },
+    "sections": [
+     {
+      "sel": "div.luxury-card.p-5",
+      "tag": "div",
+      "top": 69,
+      "height": 204,
+      "words": 20,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Historial de Sesiones",
+       "size": 18,
+       "tag": "h1"
+      },
+      "left": 33,
+      "right": 78,
+      "textLeft": 75,
+      "textRight": 78,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.luxury-card.p-5",
+      "tag": "div",
+      "top": 297,
+      "height": 1845,
+      "words": 263,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Sesión 1 • Evaluación Inicial y Planificación",
+       "size": 14,
+       "tag": "h3"
+      },
+      "left": 50,
+      "right": 54,
+      "textLeft": 50,
+      "textRight": 54,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.luxury-card.p-5",
+      "tag": "div",
+      "top": 2166,
+      "height": 451,
+      "words": 38,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Antecedentes y Parámetros del Paciente",
+       "size": 12,
+       "tag": "h2"
+      },
+      "left": 33,
+      "right": 33,
+      "textLeft": 33,
+      "textRight": 50,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Historial de Sesiones",
+      "size": 16,
+      "top": 16,
+      "firstScreen": true
+     },
+     {
+      "text": "Historial de Sesiones",
+      "size": 18,
+      "top": 90,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 50,
+      "n": 5
+     },
+     {
+      "x": 89,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 6,
+    "bodySize": 12,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "dark": false,
+    "ground": "#faf7f5",
+    "sidebar": null,
+    "topbar": {
+     "h": 80
+    },
+    "canvas": {
+     "left": 20,
+     "right": 33
+    },
+    "hero": {
+     "text": "Historial de Sesiones",
+     "words": 3,
+     "chars": 21,
+     "lines": 1,
+     "size": 16,
+     "vw": 4.1,
+     "font": "Plus Jakarta Sans",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.5,
+     "top": 16,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 4,
+     "firstScreen": 3,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 19,
+     "radii": [
+      [
+       12,
+       10
+      ],
+      [
+       16,
+       7
+      ],
+      [
+       0,
+       2
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 3,
+     "softShadows": 0,
+     "shadowSamples": [
+      "rgba(197, 160, 89, 0.08) 0px 10px 30px -5px",
+      "rgba(197, 160, 89, 0.08) 0px 10px 30px -5px",
+      "rgba(197, 160, 89, 0.08) 0px 10px 30px -5px"
+     ],
+     "glass": 0
+    },
+    "chips": {
+     "count": 1,
+     "hues": 1,
+     "samples": [
+      {
+       "hue": 24,
+       "size": 42,
+       "radius": "12px"
+      }
+     ]
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.91,
+     "tiny": 12,
+     "tinySamples": [
+      "Consultorio Digital 10px",
+      "Menú Principal 10px",
+      "Ver perfil profesional 10px",
+      "Cirujana Plástica y Esté 10px"
+     ],
+     "sizes": [
+      10,
+      12,
+      14,
+      16,
+      18
+     ]
+    },
+    "title": {
+     "text": "Historial de Sesiones",
+     "size": 16,
+     "top": 16
+    },
+    "colourShare": 0.023
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "4 tiny uppercase letter-spaced labels (e.g. \"Consultorio Digital\", \"Menú Principal\", \"Sesiones Registradas (4)\", \"Antecedentes y Parámetros del Paciente\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "button-fx",
+   "width": 1440,
+   "message": "Buttons with gradient fill and shadow/glow.",
+   "fix": "Flat fill, one colour.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (page background #faf7f5, section #faf7f5).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Unreadable text: \"Indicaciones asignadas:\" 2.1:1 (#c5a059 on #f4ebe6); \"Indicaciones asignadas:\" 2.1:1 (#c5a059 on #f4ebe6); \"Indicaciones asignadas:\" 2.1:1 (#c5a059 on #f4ebe6); \"Indicaciones asignadas:\" 2.1:1 (#c5a059 on #f4ebe6)",
+   "fix": "Raise contrast to at least 4.5:1 for text, 3:1 for large display.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "many-h1",
+   "width": 1440,
+   "message": "2 h1 elements.",
+   "fix": "One h1 per page; section titles are h2.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "heavy-shadow",
+   "width": 1440,
+   "message": "3 panel shadow(s) heavy enough to read as floating: rgba(197, 160, 89, 0.08) 0px 10px 30px -5px | rgba(197, 160, 89, 0.08) 0px 10px 30px -5px | rgba(197, 160, 89, 0.08) 0px 10px 30px -5px",
+   "fix": "Panels sit on the ground: separate them with a fill one step from the ground or a quiet 1px border. A shadow, if any, is under 8% black with a small blur. Real overlays (menus, dialogs, popovers) may float.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "tiny-text",
+   "width": 1440,
+   "message": "12 text blocks under 11px: Consultorio Digital 10px, Menú Principal 10px, Ver perfil profesional 10px, Cirujana Plástica y Esté 10px.",
+   "fix": "Nothing below 11px; secondary text 12px, data 13–14px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 390,
+   "message": "1 gradient fill(s): button.btn-primary.text-xs → linear-gradient(135deg, rgb(212, 175, 55) 0%, rgb(197, 160, 89) 100%)",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/home/facuud2/mediapp/.taste-skill/before/desktop-fold.jpg",
+   "pages": [
+    "/home/facuud2/mediapp/.taste-skill/before/desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/home/facuud2/mediapp/.taste-skill/before/tablet-fold.jpg",
+   "pages": [
+    "/home/facuud2/mediapp/.taste-skill/before/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/home/facuud2/mediapp/.taste-skill/before/mobile-fold.jpg",
+   "pages": [
+    "/home/facuud2/mediapp/.taste-skill/before/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+.git
+.gitignore
+README.md
+LICENSE
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Binaries and build artifacts
+bin/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Go modules
+go.mod
+go.sum

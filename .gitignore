@@ -1,0 +1,54 @@
+# SonarQube
+sonar-project.properties
+# Archivos generados por SonarQube
+.scannerwork/
+# SonarScanner CLI
+/sonar-scanner-5.0.1.3006-linux/
+/sonar-scanner-cli-5.0.1.3006-linux.zip
+/tools/sonar-scanner/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+.env
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+backend/tmp/
+
+# RSA KEYS
+*.pem
+
+# Frontend coverage & local demos
+frontend/coverage/
+frontend/*DEMO.html
+
+# Backend binaries, profiling & coverage
+backend/server
+backend/server.exe
+backend/auth.test
+backend/auth.test.exe
+backend/cpu.pprof
+backend/coverage
+backend/coverage.out
+backend/coverage.html
+backend/coverage_full.html
+backend/handlers.cover.out

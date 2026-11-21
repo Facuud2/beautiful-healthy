@@ -1,0 +1,5 @@
+-- +goose Up
+ALTER TABLE usuarios ADD COLUMN IF NOT EXISTS username VARCHAR(120) UNIQUE NOT NULL DEFAULT '';
+
+-- +goose Down
+ALTER TABLE usuarios DROP COLUMN IF EXISTS username;

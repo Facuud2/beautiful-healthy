@@ -1,0 +1,1880 @@
+{
+ "url": "http://localhost:3000/dashboard",
+ "at": "2026-10-20T20:28:42.550Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    0.67,
+    0.71
+   ],
+   "motion": {
+    "elements": 2,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 1350,
+     "screens": 1.5,
+     "words": 489,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 36,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Seguimiento quirúrgico y sesiones del día",
+     "words": 6,
+     "chars": 41,
+     "lines": 1,
+     "size": 24,
+     "vw": 1.7,
+     "font": "Geist",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.33,
+     "top": 72,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Seguimiento quirúrgico y sesiones del día",
+     "words": 6,
+     "lines": 1,
+     "size": 24,
+     "font": "Geist"
+    },
+    "headings": [
+     {
+      "text": "18",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.02,
+      "top": 214,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "5",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.01,
+      "top": 214,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "9",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.01,
+      "top": 214,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "94.2%",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.06,
+      "top": 214,
+      "tag": "span",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Geist",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      12,
+      14,
+      16,
+      24,
+      30
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Geist",
+      "size": 12,
+      "leading": 1.33,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7
+     },
+     "measureChars": 151,
+     "max": {
+      "size": 30,
+      "vw": 2.1,
+      "font": "Geist",
+      "text": "18"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.03,
+     "centerShare": 0.1,
+     "smallText": 64
+    },
+    "eyebrows": [
+     {
+      "text": "Pacientes en cohorte activa",
+      "above": "18",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 190
+     },
+     {
+      "text": "Consultas post-op sin leer",
+      "above": "5",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 190
+     },
+     {
+      "text": "Sesiones programadas hoy",
+      "above": "9",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 190
+     },
+     {
+      "text": "Adherencia al protocolo D+7",
+      "above": "94.2%",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 190
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f4f3f1",
+     "bodyBgHsl": {
+      "h": 40,
+      "s": 0.12,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f4f3f1",
+       "top": 0,
+       "hsl": {
+        "h": 40,
+        "s": 0.12,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 757,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#595959",
+       "share": 0.62
+      },
+      {
+       "color": "#0a0a0a",
+       "share": 0.29
+      },
+      {
+       "color": "#1b6e3c",
+       "share": 0.05
+      },
+      {
+       "color": "#7c4a03",
+       "share": 0.02
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#0a0a0a"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 4,
+     "radius": 6,
+     "height": 38,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Resumen clínico",
+      "Agenda del día",
+      "Registrar paciente",
+      "Padrón completo"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 11,
+     "hairlineSamples": [
+      "aside.fixed.inset-y-0 240px",
+      "header.bg-[#f4f3f1].border-b 1200px",
+      "div.flex.flex-col 1136px",
+      "div.flex.flex-col 709px",
+      "div.pt-3.border-t 709px"
+     ],
+     "outlinedBoxes": 4,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 8,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.11
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 188,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 1350,
+    "margins": {
+     "left": 12,
+     "right": 49
+    },
+    "sections": [
+     {
+      "sel": "section.ledger-panel.grid",
+      "tag": "section",
+      "top": 169,
+      "height": 124,
+      "words": 59,
+      "media": 0,
+      "middle": 41,
+      "heading": {
+       "text": "18",
+       "size": 30,
+       "tag": "span"
+      },
+      "left": 293,
+      "right": 53,
+      "textLeft": 293,
+      "textRight": 53,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.grid.grid-cols-1",
+      "tag": "div",
+      "top": 317,
+      "height": 416,
+      "words": 104,
+      "media": 1,
+      "middle": 62,
+      "heading": {
+       "text": "El edema post-rinoplastia ultrasónica cae un 62% e",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 293,
+      "right": 53,
+      "textLeft": 293,
+      "textRight": 53,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.ledger-panel.overflow-hidden",
+      "tag": "section",
+      "top": 757,
+      "height": 500,
+      "words": 163,
+      "media": 0,
+      "middle": 5,
+      "heading": {
+       "text": "Padrón de seguimiento postoperatorio",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 289,
+      "right": 49,
+      "textLeft": 289,
+      "textRight": 49,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Seguimiento quirúrgico y sesiones del día",
+      "size": 24,
+      "top": 72,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 272,
+      "n": 2
+     },
+     {
+      "x": 293,
+      "n": 2
+     },
+     {
+      "x": 1064,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 5,
+    "bodySize": 12,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.09,
+    "voidBox": {
+     "x": 0,
+     "y": 420,
+     "w": 240,
+     "h": 480
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "dark": false,
+    "ground": "#f4f3f1",
+    "sidebar": {
+     "w": 240,
+     "tag": "aside",
+     "links": 10,
+     "share": 0.17
+    },
+    "topbar": {
+     "h": 48
+    },
+    "canvas": {
+     "left": 32,
+     "right": 48
+    },
+    "hero": {
+     "text": "Seguimiento quirúrgico y sesiones del día",
+     "words": 6,
+     "chars": 41,
+     "lines": 1,
+     "size": 24,
+     "vw": 1.7,
+     "font": "Geist",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.33,
+     "top": 72,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 1,
+    "layout": {
+     "panels": 6,
+     "firstScreen": 5,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 8,
+     "radii": [
+      [
+       0,
+       4
+      ],
+      [
+       8,
+       4
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 7,
+     "tabularShare": 1,
+     "kpiMax": 30
+    },
+    "rows": {
+     "count": 5,
+     "median": 63
+    },
+    "chartHues": 1,
+    "placeholders": [],
+    "type": {
+     "under13": 0.76,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      11,
+      12,
+      14,
+      16,
+      24,
+      30
+     ]
+    },
+    "title": {
+     "text": "Seguimiento quirúrgico y sesiones del día",
+     "size": 24,
+     "top": 72
+    },
+    "colourShare": 0.002
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    0.82,
+    0.89,
+    0.79
+   ],
+   "motion": {
+    "elements": 2,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 2298,
+     "screens": 2.2,
+     "words": 484,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 36,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Seguimiento quirúrgico y sesiones del día",
+     "words": 6,
+     "chars": 41,
+     "lines": 1,
+     "size": 24,
+     "vw": 3.1,
+     "font": "Geist",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.33,
+     "top": 68,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Seguimiento quirúrgico y sesiones del día",
+     "words": 6,
+     "lines": 1,
+     "size": 24,
+     "font": "Geist"
+    },
+    "headings": [
+     {
+      "text": "18",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.05,
+      "top": 264,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "5",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.02,
+      "top": 264,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "9",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.02,
+      "top": 386,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "94.2%",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.11,
+      "top": 386,
+      "tag": "span",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Geist",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      12,
+      14,
+      16,
+      24,
+      30
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Geist",
+      "size": 12,
+      "leading": 1.33,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7
+     },
+     "measureChars": 95,
+     "max": {
+      "size": 30,
+      "vw": 3.9,
+      "font": "Geist",
+      "text": "18"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.03,
+     "centerShare": 0.1,
+     "smallText": 62
+    },
+    "eyebrows": [
+     {
+      "text": "Pacientes en cohorte activa",
+      "above": "18",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 240
+     },
+     {
+      "text": "Consultas post-op sin leer",
+      "above": "5",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 240
+     },
+     {
+      "text": "Sesiones programadas hoy",
+      "above": "9",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 362
+     },
+     {
+      "text": "Adherencia al protocolo D+7",
+      "above": "94.2%",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 362
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f4f3f1",
+     "bodyBgHsl": {
+      "h": 40,
+      "s": 0.12,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f4f3f1",
+       "top": 0,
+       "hsl": {
+        "h": 40,
+        "s": 0.12,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 489,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#595959",
+       "share": 0.62
+      },
+      {
+       "color": "#0a0a0a",
+       "share": 0.29
+      },
+      {
+       "color": "#1b6e3c",
+       "share": 0.05
+      },
+      {
+       "color": "#7c4a03",
+       "share": 0.02
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#0a0a0a"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 4,
+     "radius": 6,
+     "height": 38,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Resumen clínico",
+      "Dra. Valeria Montes M.N. 114.892 · Cirug",
+      "Agenda del día",
+      "Registrar paciente"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 13,
+     "hairlineSamples": [
+      "aside.fixed.inset-y-0 256px",
+      "div.px-4.h-12 255px",
+      "div.p-3.border-t 255px",
+      "header.bg-[#f4f3f1].border-b 768px",
+      "div.flex.flex-col 720px"
+     ],
+     "outlinedBoxes": 5,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 5,
+     "boxRadius": 8,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.18
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": true,
+     "height": 1024,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 2298,
+    "margins": {
+     "left": 24,
+     "right": 45
+    },
+    "sections": [
+     {
+      "sel": "div.flex.flex-col",
+      "tag": "div",
+      "top": 68,
+      "height": 127,
+      "words": 29,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Seguimiento quirúrgico y sesiones del día",
+       "size": 24,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 51,
+      "textLeft": 24,
+      "textRight": 51,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.ledger-panel.grid",
+      "tag": "section",
+      "top": 219,
+      "height": 246,
+      "words": 59,
+      "media": 0,
+      "middle": 41,
+      "heading": {
+       "text": "18",
+       "size": 30,
+       "tag": "span"
+      },
+      "left": 45,
+      "right": 45,
+      "textLeft": 45,
+      "textRight": 45,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.grid.grid-cols-1",
+      "tag": "div",
+      "top": 489,
+      "height": 788,
+      "words": 104,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "El edema post-rinoplastia ultrasónica cae un 62% e",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 45,
+      "right": 45,
+      "textLeft": 45,
+      "textRight": 45,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.ledger-panel.overflow-hidden",
+      "tag": "section",
+      "top": 1301,
+      "height": 876,
+      "words": 163,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Padrón de seguimiento postoperatorio",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 41,
+      "right": 0,
+      "textLeft": 41,
+      "textRight": -18,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Seguimiento quirúrgico y sesiones del día",
+      "size": 24,
+      "top": 68,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 45,
+      "n": 3
+     },
+     {
+      "x": 24,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 5,
+    "bodySize": 12,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "dark": false,
+    "ground": "#f4f3f1",
+    "sidebar": {
+     "w": 256,
+     "tag": "aside",
+     "links": 10,
+     "share": 0.33
+    },
+    "topbar": {
+     "h": 48
+    },
+    "canvas": {
+     "left": 18,
+     "right": -18
+    },
+    "hero": {
+     "text": "Seguimiento quirúrgico y sesiones del día",
+     "words": 6,
+     "chars": 41,
+     "lines": 1,
+     "size": 24,
+     "vw": 3.1,
+     "font": "Geist",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.33,
+     "top": 68,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 1,
+    "layout": {
+     "panels": 7,
+     "firstScreen": 5,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 8,
+     "radii": [
+      [
+       0,
+       4
+      ],
+      [
+       8,
+       4
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 7,
+     "tabularShare": 1,
+     "kpiMax": 30
+    },
+    "rows": {
+     "count": 5,
+     "median": 137
+    },
+    "chartHues": 1,
+    "placeholders": [],
+    "type": {
+     "under13": 0.76,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      11,
+      12,
+      14,
+      16,
+      24,
+      30
+     ]
+    },
+    "title": {
+     "text": "Seguimiento quirúrgico y sesiones del día",
+     "size": 24,
+     "top": 68
+    },
+    "colourShare": 0.002
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.76,
+    0.85,
+    0.92,
+    0.89
+   ],
+   "motion": {
+    "elements": 2,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 2801,
+     "screens": 3.3,
+     "words": 435,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 36,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Seguimiento quirúrgico y sesiones del día",
+     "words": 6,
+     "chars": 41,
+     "lines": 2,
+     "size": 20,
+     "vw": 5.1,
+     "font": "Geist",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.4,
+     "top": 68,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Seguimiento quirúrgico y sesiones del día",
+     "words": 6,
+     "lines": 2,
+     "size": 20,
+     "font": "Geist"
+    },
+    "headings": [
+     {
+      "text": "18",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.07,
+      "top": 324,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "5",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.04,
+      "top": 435,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "9",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.04,
+      "top": 546,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "94.2%",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 657,
+      "tag": "span",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Geist",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      12,
+      14,
+      16,
+      20,
+      24
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Geist",
+      "size": 12,
+      "leading": 1.33,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7
+     },
+     "measureChars": 60,
+     "max": {
+      "size": 24,
+      "vw": 6.2,
+      "font": "Geist",
+      "text": "18"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.04,
+     "centerShare": 0.13,
+     "smallText": 71
+    },
+    "eyebrows": [
+     {
+      "text": "Pacientes en cohorte activa",
+      "above": "18",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 300
+     },
+     {
+      "text": "Consultas post-op sin leer",
+      "above": "5",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 411
+     },
+     {
+      "text": "Sesiones programadas hoy",
+      "above": "9",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 522
+     },
+     {
+      "text": "Adherencia al protocolo D+7",
+      "above": "94.2%",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 633
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f4f3f1",
+     "bodyBgHsl": {
+      "h": 40,
+      "s": 0.12,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f4f3f1",
+       "top": 0,
+       "hsl": {
+        "h": 40,
+        "s": 0.12,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 283,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#595959",
+       "share": 0.67
+      },
+      {
+       "color": "#0a0a0a",
+       "share": 0.22
+      },
+      {
+       "color": "#1b6e3c",
+       "share": 0.05
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.04
+      },
+      {
+       "color": "#7c4a03",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#0a0a0a"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 15,
+     "inHero": 4,
+     "radius": 6,
+     "height": 30,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Resumen clínico",
+      "Dra. Valeria Montes M.N. 114.892 · Cirug",
+      "Agenda del día",
+      "Registrar paciente"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 25,
+     "hairlineSamples": [
+      "aside.fixed.inset-y-0 256px",
+      "div.px-4.h-12 255px",
+      "div.p-3.border-t 255px",
+      "header.bg-[#f4f3f1].border-b 390px",
+      "div.flex.flex-col 358px"
+     ],
+     "outlinedBoxes": 4,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 8,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": true,
+     "height": 844,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 2801,
+    "margins": {
+     "left": 16,
+     "right": 26
+    },
+    "sections": [
+     {
+      "sel": "div.flex.flex-col",
+      "tag": "div",
+      "top": 68,
+      "height": 191,
+      "words": 29,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Seguimiento quirúrgico y sesiones del día",
+       "size": 20,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 25,
+      "textLeft": 16,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.ledger-panel.grid",
+      "tag": "section",
+      "top": 283,
+      "height": 445,
+      "words": 59,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "18",
+       "size": 24,
+       "tag": "span"
+      },
+      "left": 33,
+      "right": 33,
+      "textLeft": 33,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.grid.grid-cols-1",
+      "tag": "div",
+      "top": 752,
+      "height": 844,
+      "words": 104,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "El edema post-rinoplastia ultrasónica cae un 62% e",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 37,
+      "right": 37,
+      "textLeft": 37,
+      "textRight": 37,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.ledger-panel.overflow-hidden",
+      "tag": "section",
+      "top": 1620,
+      "height": 1004,
+      "words": 127,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Padrón de seguimiento postoperatorio",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 33,
+      "right": 33,
+      "textLeft": 33,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.pt-3.border-t",
+      "tag": "footer",
+      "top": 2648,
+      "height": 133,
+      "words": 67,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 23,
+      "textLeft": 16,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Seguimiento quirúrgico y sesiones del día",
+      "size": 20,
+      "top": 68,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 33,
+      "n": 8
+     },
+     {
+      "x": 16,
+      "n": 2
+     },
+     {
+      "x": 91,
+      "n": 2
+     },
+     {
+      "x": 102,
+      "n": 2
+     },
+     {
+      "x": 142,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 15,
+    "bodySize": 12,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "dark": false,
+    "ground": "#f4f3f1",
+    "sidebar": null,
+    "topbar": {
+     "h": 48
+    },
+    "canvas": {
+     "left": 16,
+     "right": 26
+    },
+    "hero": {
+     "text": "Seguimiento quirúrgico y sesiones del día",
+     "words": 6,
+     "chars": 41,
+     "lines": 2,
+     "size": 20,
+     "vw": 5.1,
+     "font": "Geist",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.4,
+     "top": 68,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 1,
+    "layout": {
+     "panels": 7,
+     "firstScreen": 4,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 16,
+     "radii": [
+      [
+       0,
+       12
+      ],
+      [
+       8,
+       4
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 2,
+     "tabularShare": 1,
+     "kpiMax": 24
+    },
+    "rows": null,
+    "chartHues": 1,
+    "placeholders": [],
+    "type": {
+     "under13": 0.82,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      11,
+      12,
+      14,
+      16,
+      20,
+      24
+     ]
+    },
+    "title": {
+     "text": "Seguimiento quirúrgico y sesiones del día",
+     "size": 20,
+     "top": 68
+    },
+    "colourShare": 0
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "tiny-text",
+   "width": 1440,
+   "message": "76% of the text is under 13px.",
+   "fix": "Data and labels read at 13–14px; keep 11–12px for sublines and axis ticks.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/home/facuud2/mediapp/.taste-skill/round-1/desktop-fold.jpg",
+   "pages": [
+    "/home/facuud2/mediapp/.taste-skill/round-1/desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/home/facuud2/mediapp/.taste-skill/round-1/tablet-fold.jpg",
+   "pages": [
+    "/home/facuud2/mediapp/.taste-skill/round-1/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/home/facuud2/mediapp/.taste-skill/round-1/mobile-fold.jpg",
+   "pages": [
+    "/home/facuud2/mediapp/.taste-skill/round-1/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
